@@ -1,0 +1,28 @@
+{
+    "checksum": "453cbf7cfe62f0f1d798b9fabfaab484",
+    "wallpaper": "/home/bae/.config/hypr/wallpaper/used/yoru_waifu2x_noise0_scale2x.png",
+    "alpha": "100",
+    "special": {
+        "background": "#090911",
+        "foreground": "#c1c1c3",
+        "cursor": "#c1c1c3"
+    },
+    "colors": {
+        "color0": "#090911",
+        "color1": "#D26E8E",
+        "color2": "#E97092",
+        "color3": "#9C98A9",
+        "color4": "#C9A9BD",
+        "color5": "#C6BDCB",
+        "color6": "#E1B5C8",
+        "color7": "#c1c1c3",
+        "color8": "#57576b",
+        "color9": "#D26E8E",
+        "color10": "#E97092",
+        "color11": "#9C98A9",
+        "color12": "#C9A9BD",
+        "color13": "#C6BDCB",
+        "color14": "#E1B5C8",
+        "color15": "#c1c1c3"
+    }
+}

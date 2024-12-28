@@ -1,0 +1,28 @@
+{
+    "checksum": "ae6f1f5df594f8bdd1393ca63bb947d9",
+    "wallpaper": "/home/bae/.config/hypr/wallpaper/unixporn-disc/lain_tux_and_gnu_wallpaper.png",
+    "alpha": "100",
+    "special": {
+        "background": "#282240",
+        "foreground": "#c9c7cf",
+        "cursor": "#c9c7cf"
+    },
+    "colors": {
+        "color0": "#282240",
+        "color1": "#4E9BFA",
+        "color2": "#689AF3",
+        "color3": "#6EAFFB",
+        "color4": "#9796B5",
+        "color5": "#93A7E6",
+        "color6": "#8DB9F8",
+        "color7": "#c9c7cf",
+        "color8": "#716c84",
+        "color9": "#4E9BFA",
+        "color10": "#689AF3",
+        "color11": "#6EAFFB",
+        "color12": "#9796B5",
+        "color13": "#93A7E6",
+        "color14": "#8DB9F8",
+        "color15": "#c9c7cf"
+    }
+}

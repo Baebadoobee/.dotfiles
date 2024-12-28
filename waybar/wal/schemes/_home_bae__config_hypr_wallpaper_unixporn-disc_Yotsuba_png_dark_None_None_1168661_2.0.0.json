@@ -1,0 +1,28 @@
+{
+    "checksum": "008986c5e3968ae915d581819db12352",
+    "wallpaper": "/home/bae/.config/hypr/wallpaper/unixporn-disc/Yotsuba.png",
+    "alpha": "100",
+    "special": {
+        "background": "#16130d",
+        "foreground": "#c4c4c2",
+        "cursor": "#c4c4c2"
+    },
+    "colors": {
+        "color0": "#16130d",
+        "color1": "#726858",
+        "color2": "#857A68",
+        "color3": "#948A76",
+        "color4": "#A1937E",
+        "color5": "#AFA48E",
+        "color6": "#C5BAA1",
+        "color7": "#c4c4c2",
+        "color8": "#6e6759",
+        "color9": "#726858",
+        "color10": "#857A68",
+        "color11": "#948A76",
+        "color12": "#A1937E",
+        "color13": "#AFA48E",
+        "color14": "#C5BAA1",
+        "color15": "#c4c4c2"
+    }
+}

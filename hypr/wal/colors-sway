@@ -1,0 +1,21 @@
+set $wallpaper /home/bae/.config/hypr/wallpaper/used/04.png
+
+set $background #0d0d12
+set $foreground #c2c2c3
+
+set $color0 #0d0d12
+set $color1 #684D60
+set $color2 #B4726C
+set $color3 #546E94
+set $color4 #9674A1
+set $color5 #F3758D
+set $color6 #43B1DB
+set $color7 #c2c2c3
+set $color8 #58586c
+set $color9 #684D60
+set $color10 #B4726C
+set $color11 #546E94
+set $color12 #9674A1
+set $color13 #F3758D
+set $color14 #43B1DB
+set $color15 #c2c2c3

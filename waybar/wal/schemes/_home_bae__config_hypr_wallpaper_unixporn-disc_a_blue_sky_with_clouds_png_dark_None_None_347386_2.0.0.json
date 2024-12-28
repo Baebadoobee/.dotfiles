@@ -1,0 +1,28 @@
+{
+    "checksum": "40c1dd33f0895d00234fbad2817cdba3",
+    "wallpaper": "/home/bae/.config/hypr/wallpaper/unixporn-disc/a_blue_sky_with_clouds.png",
+    "alpha": "100",
+    "special": {
+        "background": "#101118",
+        "foreground": "#c3c3c5",
+        "cursor": "#c3c3c5"
+    },
+    "colors": {
+        "color0": "#101118",
+        "color1": "#3D7797",
+        "color2": "#506991",
+        "color3": "#467DA1",
+        "color4": "#408BA9",
+        "color5": "#5B9BA9",
+        "color6": "#98ABB4",
+        "color7": "#c3c3c5",
+        "color8": "#5b5f6f",
+        "color9": "#3D7797",
+        "color10": "#506991",
+        "color11": "#467DA1",
+        "color12": "#408BA9",
+        "color13": "#5B9BA9",
+        "color14": "#98ABB4",
+        "color15": "#c3c3c5"
+    }
+}

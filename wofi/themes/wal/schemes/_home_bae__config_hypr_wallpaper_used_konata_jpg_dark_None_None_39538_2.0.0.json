@@ -1,0 +1,28 @@
+{
+    "checksum": "8fa021dde754ce7f272c740ff99be50d",
+    "wallpaper": "/home/bae/.config/hypr/wallpaper/used/konata.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#333539",
+        "foreground": "#cccccd",
+        "cursor": "#cccccd"
+    },
+    "colors": {
+        "color0": "#333539",
+        "color1": "#6D86B3",
+        "color2": "#6F91D9",
+        "color3": "#7294E2",
+        "color4": "#A7A6B0",
+        "color5": "#E3ABA7",
+        "color6": "#EACEB8",
+        "color7": "#cccccd",
+        "color8": "#6f7588",
+        "color9": "#6D86B3",
+        "color10": "#6F91D9",
+        "color11": "#7294E2",
+        "color12": "#A7A6B0",
+        "color13": "#E3ABA7",
+        "color14": "#EACEB8",
+        "color15": "#cccccd"
+    }
+}

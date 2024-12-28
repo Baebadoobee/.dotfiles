@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/bae/.config/hypr/wallpaper/used/04.png"
+let background = "#0d0d12"
+let foreground = "#c2c2c3"
+let cursor     = "#c2c2c3"
+
+" Colors
+let color0  = "#0d0d12"
+let color1  = "#684D60"
+let color2  = "#B4726C"
+let color3  = "#546E94"
+let color4  = "#9674A1"
+let color5  = "#F3758D"
+let color6  = "#43B1DB"
+let color7  = "#c2c2c3"
+let color8  = "#58586c"
+let color9  = "#684D60"
+let color10 = "#B4726C"
+let color11 = "#546E94"
+let color12 = "#9674A1"
+let color13 = "#F3758D"
+let color14 = "#43B1DB"
+let color15 = "#c2c2c3"

@@ -1,0 +1,28 @@
+{
+    "checksum": "0eefd196ebaafb46476615dfc5891923",
+    "wallpaper": "/home/bae/.config/hypr/wallpaper/durarara/609635.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#131212",
+        "foreground": "#c4c3c3",
+        "cursor": "#c4c3c3"
+    },
+    "colors": {
+        "color0": "#131212",
+        "color1": "#9A9895",
+        "color2": "#A19F9C",
+        "color3": "#A1A09E",
+        "color4": "#A3A19E",
+        "color5": "#A7A5A2",
+        "color6": "#C2BEBB",
+        "color7": "#c4c3c3",
+        "color8": "#6e5a5a",
+        "color9": "#9A9895",
+        "color10": "#A19F9C",
+        "color11": "#A1A09E",
+        "color12": "#A3A19E",
+        "color13": "#A7A5A2",
+        "color14": "#C2BEBB",
+        "color15": "#c4c3c3"
+    }
+}

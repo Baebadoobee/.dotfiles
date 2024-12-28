@@ -1,0 +1,28 @@
+{
+    "checksum": "c065c55e72bc6169fe727317494cdd71",
+    "wallpaper": "/home/bae/.config/hypr/wallpaper/used/nier.gif",
+    "alpha": "100",
+    "special": {
+        "background": "#1f2035",
+        "foreground": "#c7c7cc",
+        "cursor": "#c7c7cc"
+    },
+    "colors": {
+        "color0": "#1f2035",
+        "color1": "#8379A6",
+        "color2": "#7485B7",
+        "color3": "#758AC3",
+        "color4": "#95A1D1",
+        "color5": "#90A6D6",
+        "color6": "#A4B2DE",
+        "color7": "#c7c7cc",
+        "color8": "#686a7f",
+        "color9": "#8379A6",
+        "color10": "#7485B7",
+        "color11": "#758AC3",
+        "color12": "#95A1D1",
+        "color13": "#90A6D6",
+        "color14": "#A4B2DE",
+        "color15": "#c7c7cc"
+    }
+}

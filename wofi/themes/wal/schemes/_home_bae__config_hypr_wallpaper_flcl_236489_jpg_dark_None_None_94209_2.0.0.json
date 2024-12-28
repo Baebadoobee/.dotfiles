@@ -1,0 +1,28 @@
+{
+    "checksum": "2eab92c8fbc1f102b542cc8f667e5b94",
+    "wallpaper": "/home/bae/.config/hypr/wallpaper/flcl/236489.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#100902",
+        "foreground": "#c3c1bf",
+        "cursor": "#c3c1bf"
+    },
+    "colors": {
+        "color0": "#100902",
+        "color1": "#A25E10",
+        "color2": "#9D6113",
+        "color3": "#B86E12",
+        "color4": "#B97012",
+        "color5": "#BD7112",
+        "color6": "#855521",
+        "color7": "#c3c1bf",
+        "color8": "#675f55",
+        "color9": "#A25E10",
+        "color10": "#9D6113",
+        "color11": "#B86E12",
+        "color12": "#B97012",
+        "color13": "#BD7112",
+        "color14": "#855521",
+        "color15": "#c3c1bf"
+    }
+}

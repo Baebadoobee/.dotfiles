@@ -1,0 +1,28 @@
+{
+    "checksum": "f0c506dacae36efe4bf19cd31b691f8d",
+    "wallpaper": "/home/bae/.config/hypr/wallpaper/eva/582860.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#582128",
+        "foreground": "#d5c7c9",
+        "cursor": "#d5c7c9"
+    },
+    "colors": {
+        "color0": "#582128",
+        "color1": "#E9C448",
+        "color2": "#6E9FA2",
+        "color3": "#6FAFAD",
+        "color4": "#68BAC3",
+        "color5": "#999C98",
+        "color6": "#8DB1AF",
+        "color7": "#d5c7c9",
+        "color8": "#8c7376",
+        "color9": "#E9C448",
+        "color10": "#6E9FA2",
+        "color11": "#6FAFAD",
+        "color12": "#68BAC3",
+        "color13": "#999C98",
+        "color14": "#8DB1AF",
+        "color15": "#d5c7c9"
+    }
+}

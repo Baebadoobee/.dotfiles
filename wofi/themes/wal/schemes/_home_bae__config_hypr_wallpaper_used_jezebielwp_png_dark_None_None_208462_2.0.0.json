@@ -1,0 +1,28 @@
+{
+    "checksum": "ef8f21c5d9a4f1d083d24c6257c59de7",
+    "wallpaper": "/home/bae/.config/hypr/wallpaper/used/jezebielwp.png",
+    "alpha": "100",
+    "special": {
+        "background": "#010101",
+        "foreground": "#bfbfbf",
+        "cursor": "#bfbfbf"
+    },
+    "colors": {
+        "color0": "#010101",
+        "color1": "#81827E",
+        "color2": "#949494",
+        "color3": "#9FA19E",
+        "color4": "#ADAEAD",
+        "color5": "#BFC1BE",
+        "color6": "#CECFCE",
+        "color7": "#bfbfbf",
+        "color8": "#615050",
+        "color9": "#81827E",
+        "color10": "#949494",
+        "color11": "#9FA19E",
+        "color12": "#ADAEAD",
+        "color13": "#BFC1BE",
+        "color14": "#CECFCE",
+        "color15": "#bfbfbf"
+    }
+}

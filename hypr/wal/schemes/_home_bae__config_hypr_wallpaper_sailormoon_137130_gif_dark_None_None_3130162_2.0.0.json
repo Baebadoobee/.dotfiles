@@ -1,0 +1,28 @@
+{
+    "checksum": "29807b0aa75b5714055330877b83aa2d",
+    "wallpaper": "/home/bae/.config/hypr/wallpaper/sailormoon/137130.gif",
+    "alpha": "100",
+    "special": {
+        "background": "#190411",
+        "foreground": "#c5c0c3",
+        "cursor": "#c5c0c3"
+    },
+    "colors": {
+        "color0": "#190411",
+        "color1": "#DC67C3",
+        "color2": "#F66AD1",
+        "color3": "#B78799",
+        "color4": "#EEA0AF",
+        "color5": "#FFCBB3",
+        "color6": "#F5A3CA",
+        "color7": "#c5c0c3",
+        "color8": "#6b5864",
+        "color9": "#DC67C3",
+        "color10": "#F66AD1",
+        "color11": "#B78799",
+        "color12": "#EEA0AF",
+        "color13": "#FFCBB3",
+        "color14": "#F5A3CA",
+        "color15": "#c5c0c3"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "checksum": "06c79719a68c4f67668f8c625a07011f",
+    "wallpaper": "/home/bae/.config/hypr/wallpaper/uyatsura/1348476.jpeg",
+    "alpha": "100",
+    "special": {
+        "background": "#0B1008",
+        "foreground": "#c2c3c1",
+        "cursor": "#c2c3c1"
+    },
+    "colors": {
+        "color0": "#0B1008",
+        "color1": "#72DA8D",
+        "color2": "#DBB691",
+        "color3": "#97EE9C",
+        "color4": "#F2DD9B",
+        "color5": "#FDF0B0",
+        "color6": "#FBDDC4",
+        "color7": "#c2c3c1",
+        "color8": "#5e6a56",
+        "color9": "#72DA8D",
+        "color10": "#DBB691",
+        "color11": "#97EE9C",
+        "color12": "#F2DD9B",
+        "color13": "#FDF0B0",
+        "color14": "#FBDDC4",
+        "color15": "#c2c3c1"
+    }
+}

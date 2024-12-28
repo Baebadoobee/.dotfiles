@@ -1,0 +1,28 @@
+{
+    "checksum": "b5d18c4ce358da71fb4250d0febb0725",
+    "wallpaper": "/home/bae/.config/hypr/wallpaper/unixporn-disc/a_cartoon_of_a_woman_sitting_on_a_table_with_an_umbrella.png",
+    "alpha": "100",
+    "special": {
+        "background": "#141210",
+        "foreground": "#c4c3c3",
+        "cursor": "#c4c3c3"
+    },
+    "colors": {
+        "color0": "#141210",
+        "color1": "#807B85",
+        "color2": "#75B68D",
+        "color3": "#ADA09F",
+        "color4": "#D4BEA0",
+        "color5": "#86D69B",
+        "color6": "#B3D58F",
+        "color7": "#c4c3c3",
+        "color8": "#6e615a",
+        "color9": "#807B85",
+        "color10": "#75B68D",
+        "color11": "#ADA09F",
+        "color12": "#D4BEA0",
+        "color13": "#86D69B",
+        "color14": "#B3D58F",
+        "color15": "#c4c3c3"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "checksum": "8e3c5d98447c53a22d2b268f70e1a5af",
+    "wallpaper": "/home/bae/.config/hypr/wallpaper/unixporn-disc/a_man_standing_on_a_car.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0f1016",
+        "foreground": "#c3c3c4",
+        "cursor": "#c3c3c4"
+    },
+    "colors": {
+        "color0": "#0f1016",
+        "color1": "#6F6E8F",
+        "color2": "#6E6B90",
+        "color3": "#807FA3",
+        "color4": "#9292B7",
+        "color5": "#9699B7",
+        "color6": "#9C9BC1",
+        "color7": "#c3c3c4",
+        "color8": "#5a5a6f",
+        "color9": "#6F6E8F",
+        "color10": "#6E6B90",
+        "color11": "#807FA3",
+        "color12": "#9292B7",
+        "color13": "#9699B7",
+        "color14": "#9C9BC1",
+        "color15": "#c3c3c4"
+    }
+}
