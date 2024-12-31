@@ -1,138 +1,138 @@
-{
+  {
+  "name": "bar1",
   "layer": "top",
   "position": "top",
-  "margin-top": 3,
-  "margin-left": 200,
-  "margin-right": 200,
-  "margin-bottom": 3,
-  "modules-left": [
-    "clock",
-    "custom/sep",
-    "tray"
-  ],
-  "modules-center": [
-    "hyprland/workspaces", 
-    "custom/media"
-  ],
-  "modules-right": [
-    "pulseaudio",
-    "battery", 
-    "network",
-    "custom/sep", 
-    "custom/exit"
-  ],
+  "margin-top": 5,
+  "margin-left": 10,
+  "height": 20,
+  "margin-right": 10,
+  "margin-bottom": 1,
+    "modules-left": [
+      "clock",
+      "custom/sep",
+      "tray"
+    ],
+    "modules-center": [
+      "hyprland/workspaces"
+    ],
+    "modules-right": [
+      "pulseaudio",
+      "battery", 
+      "network",
+      "custom/sep", 
+      "custom/exit"
+    ],
 
-  "custom/pacman": {
-    "format": " {}   ",
-    "interval": "once",
-    "exec": "checkupdates | wc -l",
-    "on-click": "update-system",
-    "signal": 8
-  },
-
-  "custom/media": {
-    "format": "{icon}{}",
-    "escape": true,
-    "return-type": "json",
-    "max-length": 40,
-    "on-click": "playerctl play-pause",
-    "on-click-right": "playerctl stop",
-    "smooth-scrolling-threshold": 10, // This value was tested using a trackpad, it should be lowered if using a mouse.
-    "on-scroll-up": "playerctl next",
-    "on-scroll-down": "playerctl previous",
-    "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null" // Script in resources/custom_modules folder
-  },
-
-  "battery": {
-    "format": "{icon}  {capacity}%",
-    "format-charging": "󰂄  {capacity}%",
-    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
-  },
-
-  "clock": {
-    "format": "󰥔",
-    "tooltip": true,
-    "tooltip-format": "{:%a, %d. %b  %I:%M %p}"
-  },
-
-  "Puseaudio/slider": {
-    "orientation": "horizontal",
-    "min": 0,
-    "max": 100
-  },
-
-  "pulseaudio": {
-    "format": "{icon}",
-    "format-bluetooth": "󰂱  {volume}%",
-    "format-muted": "󰖁",
-    "scroll-step": 1,
-    "on-click": "",
-    "ignored-sinks": ["Easy Effects Sink"],
-    "format-icons": {
-      "headphone": "  ",
-      "hands-free": " ",
-      "headset": "󰋎 ",
-      "phone": " ",
-      "portable": " ",
-      "car": "",
-      "default": ["󰖀", "󰕾"]
-    }
-  },
-
- "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
-        //"format-wifi": "{icon}   {essid}",
-        "format-wifi": "{icon}",
-        "format-ethernet": "{ipaddr}/{cidr} 󰈀",
-        "tooltip-format": "{icon}   {essid}",
-        //"tooltip-format": "{ifname} via {gwaddr} 󰈀",
-        //"format-linked": "{ifname} (No IP) 󰈀",
-        // "format-alt": "{ifname}: {ipaddr}/{cidr}",
-	"format-disconnected": "󰤭   disconnected",
-        "max-length": 50,
-	"format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
+    "custom/pacman": {
+      "format": " {}   ",
+      "interval": "once",
+      "exec": "checkupdates | wc -l",
+      "on-click": "update-system",
+      "signal": 8
     },
 
-  "hyprland/workspaces": {
-    "format": "{icon}",
-    "on-click": "activate",
-    "format-icons": {
-      "urgent": "󰀨",
-      "active": "",
-      "default": ""
+    "custom/media": {
+      "format": "{icon}{}",
+      "escape": true,
+      "return-type": "json",
+      "max-length": 40,
+      "on-click": "playerctl play-pause",
+      "on-click-right": "playerctl stop",
+      "smooth-scrolling-threshold": 10, // This value was tested using a trackpad, it should be lowered if using a mouse.
+      "on-scroll-up": "playerctl next",
+      "on-scroll-down": "playerctl previous",
+      "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null" // Script in resources/custom_modules folder
     },
 
-    "sort-by-number": true
-  },
+    "hyprland/workspaces": {
+      "format": "{icon}",
+      "on-click": "activate",
+      "format-icons": {
+        "urgent": "󰀨",
+        "active": "",
+        "default": ""
+      }
+    },
 
-  "backlight": {
-    "device": "intel_backlight",
-    "format": "{icon}   {percent}%",
-    "format-icons": ["󰃞", "󰃟", "󰃠"]
-  },
+    "battery": {
+      "format": "{icon}  {capacity}%",
+      "format-charging": "󰂄  {capacity}%",
+      "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    },
 
-  "custom/weather": {
-    "exec": "${HOME}/.config/waybar/scripts/get_weather.sh",
-    "return-type": "json",
-    "format": "{}",
-    "tooltip": true,
-    "interval": 3600
-  },
+    "clock": {
+      "format": "󰥔",
+      "tooltip": true,
+      "tooltip-format": "{:%a, %d. %b  %I:%M %p}"
+    },
 
-  "tray": {
-    "icon-size": 14,
-    "spacing": 10
-  },
+    "Puseaudio/slider": {
+      "orientation": "horizontal",
+      "min": 0,
+      "max": 100
+    },
 
-  "custom/sep": {
-      "format": "||",
+    "pulseaudio": {
+      "format": "{icon}",
+      "format-bluetooth": "󰂱  {volume}%",
+      "format-muted": "󰖁",
+      "scroll-step": 1,
+      "on-click": "",
+      "ignored-sinks": ["Easy Effects Sink"],
+      "format-icons": {
+        "headphone": "  ",
+        "hands-free": " ",
+        "headset": "󰋎 ",
+        "phone": " ",
+        "portable": " ",
+        "car": "",
+        "default": ["󰖀", "󰕾"]
+      }
+    },
+
+  "network": {
+          // "interface": "wlp2*", // (Optional) To force the use of this interface
+          //"format-wifi": "{icon}   {essid}",
+          "format-wifi": "{icon}",
+          "format-ethernet": "{ipaddr}/{cidr} 󰈀",
+          "tooltip-format": "{icon}   {essid}",
+          //"tooltip-format": "{ifname} via {gwaddr} 󰈀",
+          //"format-linked": "{ifname} (No IP) 󰈀",
+          // "format-alt": "{ifname}: {ipaddr}/{cidr}",
+    "format-disconnected": "󰤭   disconnected",
+          "max-length": 50,
+    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
+      },
+
+
+    "backlight": {
+      "device": "intel_backlight",
+      "format": "{icon}   {percent}%",
+      "format-icons": ["󰃞", "󰃟", "󰃠"]
+    },
+
+    "custom/weather": {
+      "exec": "${HOME}/.config/waybar/scripts/get_weather.sh",
+      "return-type": "json",
+      "format": "{}",
+      "tooltip": true,
+      "interval": 3600
+    },
+
+    "tray": {
+      "icon-size": 14,
+      "spacing": 10
+    },
+
+    "custom/sep": {
+        "format": "||",
+        "tooltip": false
+    },
+
+    "custom/exit": {
+      "format": "",
       "tooltip": false,
-  },
-
-  "custom/exit": {
-    "format": "",
-    "tooltip": false,
-    "max-length": 1,
-    "on-click": "wlogout"
+      "max-length": 1,
+      "on-click": "wlogout"
+    }
   }
-}

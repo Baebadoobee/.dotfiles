@@ -5,7 +5,6 @@
     font-family: 'Fira Code', sans-serif, 'Droid Sans Mono', 'monospace', monospace, 'Hack Nerd Font', 'Nerd Font';
     font-weight: bold;
     font-size: 14px;
-    border-radius: 10px;
 }
 
 window#waybar {
@@ -17,14 +16,30 @@ window#waybar {
     color: @background;
 }
 
+.bar1 {
+    border-width: 2px;
+    border-style: solid;
+    border-color: @color3;
+    background-color: @background;
+    opacity: 0.8;
+    color: @background;
+    border-radius: 6px;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+}
+
 /* Module groups -------------------------------------------------
 .modules-right, .modules-left, .modules-center {
     background: @background;
     border-color: @color3;
 }
+    .modules-left {margin: 5px 5px 5px 15px;} * N E S W*
+    .modules-right {margin: 5px 15px 5px 5px;}
+
 */
-.modules-left {margin: 5px 5px 5px 15px;} /* N E S W*/
-.modules-right {margin: 5px 15px 5px 5px;}
+.modules-left {margin: 0 5px 0 15px;} /* N E S W*/
+.modules-right {margin: 0 15px 0 5px;}
 
 /* Modules -------------------------------------------------------*/
 
@@ -45,6 +60,11 @@ window#waybar {
 }
 
 /* Mid-Mods */
+#workspaces {
+    background-color: transparent;
+    padding: 0; /* 0.3em Adjust padding here */
+}
+
 #workspaces button {box-shadow: none; border-color: transparent;}
 #workspaces button.active {color: @foreground;}
 #workspaces button:hover {background: transparent;}

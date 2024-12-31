@@ -4,7 +4,8 @@ import = ["~/.cache/wal/colors-alacritty.toml"]
 
 [window]
 
-opacity = 0.685
+opacity = 0.9
+#opacity = 0.685
 
 padding.x = 10
 padding.y = 10
