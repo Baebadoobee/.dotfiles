@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Archlinux (AUR)
+Comment=Arch-AUR's shortcut.
+Exec=/home/bae/Archlinux/Archlinux
+Icon=/home/bae/app-icons/arch.svg
+Terminal=false
+Type=Application
+Categories=Network;
+PrefersNonDefaultGPU=true
+X-KDE-RunOnDiscreteGpu=true
+Path=
+StartupNotify=false

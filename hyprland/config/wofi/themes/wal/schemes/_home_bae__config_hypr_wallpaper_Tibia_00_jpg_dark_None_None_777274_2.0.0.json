@@ -1,0 +1,28 @@
+{
+    "checksum": "183496139e3941f65c236bb329a53a1b",
+    "wallpaper": "/home/bae/.config/hypr/wallpaper/Tibia/00.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0b0404",
+        "foreground": "#c2c0c0",
+        "cursor": "#c2c0c0"
+    },
+    "colors": {
+        "color0": "#0b0404",
+        "color1": "#AA5F34",
+        "color2": "#98604D",
+        "color3": "#B06F4E",
+        "color4": "#669145",
+        "color5": "#BE8E64",
+        "color6": "#D39B66",
+        "color7": "#c2c0c0",
+        "color8": "#665454",
+        "color9": "#AA5F34",
+        "color10": "#98604D",
+        "color11": "#B06F4E",
+        "color12": "#669145",
+        "color13": "#BE8E64",
+        "color14": "#D39B66",
+        "color15": "#c2c0c0"
+    }
+}

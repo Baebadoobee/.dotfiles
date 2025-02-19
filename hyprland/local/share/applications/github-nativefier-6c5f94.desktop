@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=GitHub
+Comment=GitHub's shortcut.
+Exec=/home/bae/GitHub/GitHub
+Icon=/home/bae/app-icons/github.svg
+Terminal=false
+Type=Application
+Categories=Network;
+PrefersNonDefaultGPU=true
+X-KDE-RunOnDiscreteGpu=true
+Path=
+StartupNotify=false

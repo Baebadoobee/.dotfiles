@@ -1,0 +1,28 @@
+{
+    "checksum": "b40701e45e4d509321928b13e49995df",
+    "wallpaper": "/home/bae/.config/hypr/wallpaper/unixporn-disc/lovesick-cannibal.jpeg",
+    "alpha": "100",
+    "special": {
+        "background": "#1c0c36",
+        "foreground": "#c6c2cc",
+        "cursor": "#c6c2cc"
+    },
+    "colors": {
+        "color0": "#1c0c36",
+        "color1": "#2319C5",
+        "color2": "#987192",
+        "color3": "#B4A2AA",
+        "color4": "#CB9997",
+        "color5": "#C7B6B5",
+        "color6": "#CEC5B9",
+        "color7": "#c6c2cc",
+        "color8": "#6b6379",
+        "color9": "#2319C5",
+        "color10": "#987192",
+        "color11": "#B4A2AA",
+        "color12": "#CB9997",
+        "color13": "#C7B6B5",
+        "color14": "#CEC5B9",
+        "color15": "#c6c2cc"
+    }
+}

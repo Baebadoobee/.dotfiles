@@ -1,0 +1,28 @@
+{
+    "checksum": "3d844cf92712b79f1519f7136aa5379e",
+    "wallpaper": "/home/bae/.config/hypr/wallpaper/unixporn-disc/1378713_upscayl_2x_realesrgan-x4plus.png",
+    "alpha": "100",
+    "special": {
+        "background": "#180e0d",
+        "foreground": "#c5c2c2",
+        "cursor": "#c5c2c2"
+    },
+    "colors": {
+        "color0": "#180e0d",
+        "color1": "#70917C",
+        "color2": "#8A8A3C",
+        "color3": "#939464",
+        "color4": "#9CA76B",
+        "color5": "#A2AE71",
+        "color6": "#AAB68C",
+        "color7": "#c5c2c2",
+        "color8": "#6e5d5a",
+        "color9": "#70917C",
+        "color10": "#8A8A3C",
+        "color11": "#939464",
+        "color12": "#9CA76B",
+        "color13": "#A2AE71",
+        "color14": "#AAB68C",
+        "color15": "#c5c2c2"
+    }
+}

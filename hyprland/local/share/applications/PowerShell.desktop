@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=PowerShell
+Comment=Windows PowerShell.
+Exec=alacritty --class PowerShell -T PowerShell -e pwsh -NoLogo -NoExit
+Icon=/home/bae/app-icons/powershell.png
+Terminal=false
+Type=Application
+Categories=Shell;
+PrefersNonDefaultGPU=true
+X-KDE-RunOnDiscreteGpu=true
+Path=
+StartupNotify=false

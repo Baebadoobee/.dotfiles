@@ -1,0 +1,28 @@
+{
+    "checksum": "1c1b9124c43c594eb70b1048ed7a9eeb",
+    "wallpaper": "/home/bae/.config/hypr/wallpaper/devilman/08.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#070307",
+        "foreground": "#c1c0c1",
+        "cursor": "#c1c0c1"
+    },
+    "colors": {
+        "color0": "#070307",
+        "color1": "#930101",
+        "color2": "#AF0200",
+        "color3": "#B22501",
+        "color4": "#CB0A00",
+        "color5": "#EA0C00",
+        "color6": "#CE2900",
+        "color7": "#c1c0c1",
+        "color8": "#655265",
+        "color9": "#930101",
+        "color10": "#AF0200",
+        "color11": "#B22501",
+        "color12": "#CB0A00",
+        "color13": "#EA0C00",
+        "color14": "#CE2900",
+        "color15": "#c1c0c1"
+    }
+}

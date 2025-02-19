@@ -1,0 +1,28 @@
+{
+    "checksum": "026b09d95112d9e6427380cc57d87d7e",
+    "wallpaper": "/home/bae/.config/hypr/wallpaper/unixporn-disc/Konachan.com_-_380247_sample.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0C0C11",
+        "foreground": "#c2c2c3",
+        "cursor": "#c2c2c3"
+    },
+    "colors": {
+        "color0": "#0C0C11",
+        "color1": "#5D5C68",
+        "color2": "#99696C",
+        "color3": "#CF5958",
+        "color4": "#918679",
+        "color5": "#546D86",
+        "color6": "#5D9F94",
+        "color7": "#c2c2c3",
+        "color8": "#58586c",
+        "color9": "#5D5C68",
+        "color10": "#99696C",
+        "color11": "#CF5958",
+        "color12": "#918679",
+        "color13": "#546D86",
+        "color14": "#5D9F94",
+        "color15": "#c2c2c3"
+    }
+}

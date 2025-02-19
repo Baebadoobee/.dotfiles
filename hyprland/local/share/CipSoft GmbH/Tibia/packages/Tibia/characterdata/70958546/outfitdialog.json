@@ -1,0 +1,32 @@
+{
+    "configureShowOffSocketPresets": [
+    ],
+    "customiseCharacterPresets": [
+        {
+            "mount": {
+                "color": {
+                    "detail": 115,
+                    "head": 95,
+                    "legs": 39,
+                    "torso": 113
+                },
+                "id": 387
+            },
+            "name": "00",
+            "outfit": {
+                "color": {
+                    "detail": 57,
+                    "head": 78,
+                    "legs": 39,
+                    "torso": 29
+                },
+                "firstAddOn": false,
+                "id": 128,
+                "secondAddOn": false
+            },
+            "summon": {
+                "id": 0
+            }
+        }
+    ]
+}

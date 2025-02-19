@@ -1,0 +1,28 @@
+{
+    "checksum": "129675e3ced87f5decda82db904cfe09",
+    "wallpaper": "/home/bae/.config/hypr/wallpaper/unixporn-disc/gruvboxkatanagirl.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#151612",
+        "foreground": "#c4c4c3",
+        "cursor": "#c4c4c3"
+    },
+    "colors": {
+        "color0": "#151612",
+        "color1": "#A04537",
+        "color2": "#E0472E",
+        "color3": "#B55845",
+        "color4": "#768C7B",
+        "color5": "#A88D71",
+        "color6": "#B8AA91",
+        "color7": "#c4c4c3",
+        "color8": "#686f5b",
+        "color9": "#A04537",
+        "color10": "#E0472E",
+        "color11": "#B55845",
+        "color12": "#768C7B",
+        "color13": "#A88D71",
+        "color14": "#B8AA91",
+        "color15": "#c4c4c3"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "checksum": "86fd1a83274e12d0fabc4a50f4103134",
+    "wallpaper": "/home/bae/.config/hypr/wallpaper/unixporn-disc/evangelion-shinji-unit-001.png",
+    "alpha": "100",
+    "special": {
+        "background": "#101113",
+        "foreground": "#c3c3c4",
+        "cursor": "#c3c3c4"
+    },
+    "colors": {
+        "color0": "#101113",
+        "color1": "#BC3C29",
+        "color2": "#B05B47",
+        "color3": "#A18D74",
+        "color4": "#C0AE8F",
+        "color5": "#DFD1AB",
+        "color6": "#E2D3AD",
+        "color7": "#c3c3c4",
+        "color8": "#59636e",
+        "color9": "#BC3C29",
+        "color10": "#B05B47",
+        "color11": "#A18D74",
+        "color12": "#C0AE8F",
+        "color13": "#DFD1AB",
+        "color14": "#E2D3AD",
+        "color15": "#c3c3c4"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "checksum": "a46e9a0b3a6932824c91ed8b7231ee7c",
+    "wallpaper": "/home/bae/.config/hypr/wallpaper/Dandadan/00.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0d1012",
+        "foreground": "#c2c3c3",
+        "cursor": "#c2c3c3"
+    },
+    "colors": {
+        "color0": "#0d1012",
+        "color1": "#E7492B",
+        "color2": "#7C8472",
+        "color3": "#9B8C76",
+        "color4": "#AEA68B",
+        "color5": "#CCB797",
+        "color6": "#E9DDB5",
+        "color7": "#c2c3c3",
+        "color8": "#58656c",
+        "color9": "#E7492B",
+        "color10": "#7C8472",
+        "color11": "#9B8C76",
+        "color12": "#AEA68B",
+        "color13": "#CCB797",
+        "color14": "#E9DDB5",
+        "color15": "#c2c3c3"
+    }
+}

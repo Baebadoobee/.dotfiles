@@ -1,0 +1,28 @@
+{
+    "checksum": "cb81797becbaa3464b7e96d8065ec336",
+    "wallpaper": "/home/bae/.config/hypr/wallpaper/berserk/655978.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#080505",
+        "foreground": "#c1c0c0",
+        "cursor": "#c1c0c0"
+    },
+    "colors": {
+        "color0": "#080505",
+        "color1": "#724B4B",
+        "color2": "#9D2929",
+        "color3": "#996464",
+        "color4": "#946B6B",
+        "color5": "#AD7F80",
+        "color6": "#B48C8C",
+        "color7": "#c1c0c0",
+        "color8": "#665353",
+        "color9": "#724B4B",
+        "color10": "#9D2929",
+        "color11": "#996464",
+        "color12": "#946B6B",
+        "color13": "#AD7F80",
+        "color14": "#B48C8C",
+        "color15": "#c1c0c0"
+    }
+}

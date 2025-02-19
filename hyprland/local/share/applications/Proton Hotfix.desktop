@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Proton Hotfix
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/2180100
+Icon=steam
+Terminal=false
+Type=Application
+Categories=Game;

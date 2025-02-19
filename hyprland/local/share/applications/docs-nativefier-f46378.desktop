@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Docs
+Comment=Google's text editor.
+Path=Google-Docs/
+Exec=/home/bae/Google-Docs/Docs
+Icon=/home/bae/app-icons/docs.png
+Terminal=false
+Type=Application
+Categories=TextEditor;
+PrefersNonDefaultGPU=true
+X-KDE-RunOnDiscreteGpu=true
+Path=
+StartupNotify=false
