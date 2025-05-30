@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=WhatsApp
+Exec=/home/bae/WhatsApp/WhatsApp
+Icon=/home/bae/app-icons/whatsapp.png
+Terminal=false
+Type=Application
+Categories=Messenger;
+MimeType=x-scheme-handler/steam;x-scheme-handler/steamlink;
+PrefersNonDefaultGPU=true
+X-KDE-RunOnDiscreteGpu=true
+Path=
+StartupNotify=false
+Comment=

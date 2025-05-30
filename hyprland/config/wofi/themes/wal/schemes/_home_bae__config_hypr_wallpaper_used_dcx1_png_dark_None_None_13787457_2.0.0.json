@@ -1,0 +1,28 @@
+{
+    "checksum": "f5be65a35d6e88dbe3fe91521b52f546",
+    "wallpaper": "/home/bae/.config/hypr/wallpaper/used/dcx1.png",
+    "alpha": "100",
+    "special": {
+        "background": "#001501",
+        "foreground": "#bfc4bf",
+        "cursor": "#bfc4bf"
+    },
+    "colors": {
+        "color0": "#001501",
+        "color1": "#255C42",
+        "color2": "#1CED41",
+        "color3": "#2D194D",
+        "color4": "#3D545B",
+        "color5": "#411D5E",
+        "color6": "#4ED16A",
+        "color7": "#bfc4bf",
+        "color8": "#556955",
+        "color9": "#255C42",
+        "color10": "#1CED41",
+        "color11": "#2D194D",
+        "color12": "#3D545B",
+        "color13": "#411D5E",
+        "color14": "#4ED16A",
+        "color15": "#bfc4bf"
+    }
+}

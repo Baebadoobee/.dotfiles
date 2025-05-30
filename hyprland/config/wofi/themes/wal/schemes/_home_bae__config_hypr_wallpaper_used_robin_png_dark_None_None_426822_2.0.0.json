@@ -1,0 +1,28 @@
+{
+    "checksum": "3af6cf5da64b3cf24e22f97878711d13",
+    "wallpaper": "/home/bae/.config/hypr/wallpaper/used/robin.png",
+    "alpha": "100",
+    "special": {
+        "background": "#122424",
+        "foreground": "#c3c8c8",
+        "cursor": "#c3c8c8"
+    },
+    "colors": {
+        "color0": "#122424",
+        "color1": "#2F5F5F",
+        "color2": "#2F605F",
+        "color3": "#315F60",
+        "color4": "#2F6060",
+        "color5": "#306060",
+        "color6": "#306161",
+        "color7": "#c3c8c8",
+        "color8": "#5f7474",
+        "color9": "#2F5F5F",
+        "color10": "#2F605F",
+        "color11": "#315F60",
+        "color12": "#2F6060",
+        "color13": "#306060",
+        "color14": "#306161",
+        "color15": "#c3c8c8"
+    }
+}

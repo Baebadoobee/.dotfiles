@@ -1,0 +1,50 @@
+@import 'colors-nwgdock.css';
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+window {
+  	background: transparent;
+	/*
+	border-style: solid;
+	border-width: 2px;
+	border-color: @foreground;
+	*/
+}
+
+#box {
+  /* Define attributes of the box surrounding icons here */
+  padding: 25px 6px 25px 6px;
+  background-color: @background;
+  opacity: 1;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+}
+
+#active {
+	/* This is to underline the button representing the currently active window */
+	border-left: solid 1px;
+	border-color: @foreground;
+}
+
+button, image {
+	background: none;
+	border-style: none;
+	box-shadow: none;
+	color: @color14;
+	border-radius: 0;
+}
+
+button {
+	padding: 4px;
+	margin-left: 4px;
+	margin-right: 4px;
+	color: #eee;
+  	font-size: 0;
+}
+
+button:focus {
+	box-shadow: none
+}

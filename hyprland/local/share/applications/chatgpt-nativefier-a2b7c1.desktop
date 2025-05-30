@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=ChatGPT
+Comment=OpenAI ChatGPT desktop app (electron)
+Exec=openai-chatgpt-nativefier
+Icon=/home/bae/app-icons/chatgpt.png
+Terminal=false
+Type=Application
+Categories=Network;
+PrefersNonDefaultGPU=true
+X-KDE-RunOnDiscreteGpu=true
+Path=
+StartupNotify=true

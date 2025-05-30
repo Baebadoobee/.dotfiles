@@ -1,0 +1,28 @@
+{
+    "checksum": "a1c726a5304f6582d987310134c4515d",
+    "wallpaper": "/home/bae/.config/hypr/wallpaper/unixporn-disc/peng.png",
+    "alpha": "100",
+    "special": {
+        "background": "#1c1e26",
+        "foreground": "#c6c6c8",
+        "cursor": "#c6c6c8"
+    },
+    "colors": {
+        "color0": "#1c1e26",
+        "color1": "#668BB0",
+        "color2": "#658BB2",
+        "color3": "#7AABC4",
+        "color4": "#A39F9E",
+        "color5": "#CBC0A6",
+        "color6": "#85B9CB",
+        "color7": "#c6c6c8",
+        "color8": "#636679",
+        "color9": "#668BB0",
+        "color10": "#658BB2",
+        "color11": "#7AABC4",
+        "color12": "#A39F9E",
+        "color13": "#CBC0A6",
+        "color14": "#85B9CB",
+        "color15": "#c6c6c8"
+    }
+}

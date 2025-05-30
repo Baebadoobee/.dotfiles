@@ -1,0 +1,28 @@
+{
+    "checksum": "4df786b5433f2a4da766b3b77cccc6cf",
+    "wallpaper": "/home/bae/.config/hypr/wallpaper/used/getinshinji.png",
+    "alpha": "100",
+    "special": {
+        "background": "#121906",
+        "foreground": "#c3c5c0",
+        "cursor": "#c3c5c0"
+    },
+    "colors": {
+        "color0": "#121906",
+        "color1": "#B8ABB6",
+        "color2": "#D59C95",
+        "color3": "#C9B3BD",
+        "color4": "#CDC3BE",
+        "color5": "#B5AFC2",
+        "color6": "#CFB7C4",
+        "color7": "#c3c5c0",
+        "color8": "#646c59",
+        "color9": "#B8ABB6",
+        "color10": "#D59C95",
+        "color11": "#C9B3BD",
+        "color12": "#CDC3BE",
+        "color13": "#B5AFC2",
+        "color14": "#CFB7C4",
+        "color15": "#c3c5c0"
+    }
+}

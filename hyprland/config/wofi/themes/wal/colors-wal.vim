@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/bae/.config/hypr/wallpaper/unixporn-disc/03.png"
+let background = "#282240"
+let foreground = "#c9c7cf"
+let cursor     = "#c9c7cf"
+
+" Colors
+let color0  = "#282240"
+let color1  = "#4E9BFA"
+let color2  = "#689AF3"
+let color3  = "#6EAFFB"
+let color4  = "#9796B5"
+let color5  = "#93A7E6"
+let color6  = "#8DB9F8"
+let color7  = "#c9c7cf"
+let color8  = "#716c84"
+let color9  = "#4E9BFA"
+let color10 = "#689AF3"
+let color11 = "#6EAFFB"
+let color12 = "#9796B5"
+let color13 = "#93A7E6"
+let color14 = "#8DB9F8"
+let color15 = "#c9c7cf"

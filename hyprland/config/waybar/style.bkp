@@ -1,0 +1,120 @@
+@import 'colors-waybar.css';
+
+* {
+    font-family: 'Fira Code', sans-serif, 'Droid Sans Mono', 'monospace', monospace, 'Hack Nerd Font', 'Nerd Font';
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+window#waybar {
+    border-width: 2px;
+    padding: 0 5px 0 5px ;
+    border-style: solid;
+    border-color: @color3;
+    background-color: @background;
+    opacity: 0.8;
+    color: @background;
+}
+
+#workspaces button.active {
+    color: @foreground;
+}
+
+.modules-left {
+    margin-left: 12px;    
+}
+
+.modules-right {
+    margin-right: 12px;    
+}
+
+#battery,
+#backlight,
+#custom-weather {
+    color: @color5; /* color5 */
+     /* background */
+    margin: 0 15px 0 0px;
+    padding: 0 15px 0 15px; /* top, right, bottom, left */
+}
+
+#custom-sep {
+    color: @foreground; /* color5 */
+     /* background */
+    margin: 0 7px 0 0px;
+}
+
+#custom-exit {
+    color: @color5; /* color5 */
+    margin: -2px 7px 0 0;
+    padding: 0 0px 0 0px; /* top, right, bottom, left */
+}
+
+#custom-exit:hover {
+    color: @color2; /* color5 */
+}
+
+#clock {
+    color: @color3; /* color3 */
+     /* background */
+    margin: 0 15px 0 0;
+    padding: 0 15px 0 15px;
+}
+
+#network {
+    color: @color4; /* color4 */
+    margin: 0 15px 0 0;
+}
+
+tooltip {
+    color: @color2;
+    background-color: @background;
+    /*text-shadow: none; */
+    opacity: 0.6;
+  }
+
+/* Pulse audio ---------------------------------------------*/ 
+#pulseaudio {
+    color: @color5; /* color5 */
+    margin: 0 5px 0 0px;/* top, right, bottom, left */
+}
+
+#pulseaudio-slider slider {
+    min-height: 0px;
+    min-width: 0px;
+    opacity: 0;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+}
+
+#pulseaudio-slider trough {
+    min-height: 3px;
+    min-width: 80px;
+    border-radius: 0px;
+    background-color: @background;
+}
+
+#pulseaudio-slider highlight {
+    min-width: 10px;
+    border-radius: 0px;
+    background-color: @foreground;
+}
+/* Pulse audio ---------------------------------------------*/ 
+
+#backlight {
+    color: @color5; /* color5 */
+}
+
+#custom-weather {
+    color: @color4; /* color2 */
+     /* background */
+    padding: 0 15px 0 15px; /* top, right, bottom, left */
+}
+
+#custom-media {
+    color: @color4; /* color2 */
+     /* background */
+    margin: 0 0px 0 15px;
+    padding: 0 15px 0 15px; /* top, right, bottom, left */
+}

@@ -1,0 +1,28 @@
+{
+    "checksum": "9b657262fa73ddce27d3f19b9d0e7f7c",
+    "wallpaper": "/home/bae/.config/hypr/wallpaper/used/APO.gif",
+    "alpha": "100",
+    "special": {
+        "background": "#0d1017",
+        "foreground": "#c2c3c5",
+        "cursor": "#c2c3c5"
+    },
+    "colors": {
+        "color0": "#0d1017",
+        "color1": "#A7BF6A",
+        "color2": "#39538D",
+        "color3": "#5C738D",
+        "color4": "#6C929B",
+        "color5": "#4C96A3",
+        "color6": "#99A4A2",
+        "color7": "#c2c3c5",
+        "color8": "#5a606e",
+        "color9": "#A7BF6A",
+        "color10": "#39538D",
+        "color11": "#5C738D",
+        "color12": "#6C929B",
+        "color13": "#4C96A3",
+        "color14": "#99A4A2",
+        "color15": "#c2c3c5"
+    }
+}

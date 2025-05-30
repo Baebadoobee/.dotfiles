@@ -1,0 +1,28 @@
+{
+    "checksum": "3866f4f5be6a370e49cb94ce2c891455",
+    "wallpaper": "/home/bae/.config/hypr/wallpaper/unixporn-disc/08.jpeg",
+    "alpha": "100",
+    "special": {
+        "background": "#0d0d17",
+        "foreground": "#c2c2c5",
+        "cursor": "#c2c2c5"
+    },
+    "colors": {
+        "color0": "#0d0d17",
+        "color1": "#9E97AB",
+        "color2": "#DBAEB3",
+        "color3": "#9D95D3",
+        "color4": "#B6A9D7",
+        "color5": "#C8B6E0",
+        "color6": "#E5D4DF",
+        "color7": "#c2c2c5",
+        "color8": "#5a5a6e",
+        "color9": "#9E97AB",
+        "color10": "#DBAEB3",
+        "color11": "#9D95D3",
+        "color12": "#B6A9D7",
+        "color13": "#C8B6E0",
+        "color14": "#E5D4DF",
+        "color15": "#c2c2c5"
+    }
+}

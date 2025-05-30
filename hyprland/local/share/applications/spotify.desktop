@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Name=Spotify
+GenericName=Music Player
+Icon=/home/bae/app-icons/spotify.png
+TryExec=spotify
+Exec=spotify --uri=%U
+Terminal=false
+MimeType=x-scheme-handler/spotify;
+Categories=Audio;Music;Player;AudioVideo;
+StartupWMClass=spotify
+Comment=
+Path=
+StartupNotify=false

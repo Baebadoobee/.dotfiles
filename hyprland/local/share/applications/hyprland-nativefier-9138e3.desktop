@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Hyprland
+Comment=Hyprland-Wiki's shortcut.
+Exec=/home/bae/Hyprland/Hyprland
+Icon=/home/bae/app-icons/hyprland.svg
+Terminal=false
+Type=Application
+Categories=Network;
+PrefersNonDefaultGPU=true
+X-KDE-RunOnDiscreteGpu=true
+Path=
+StartupNotify=false

@@ -1,0 +1,28 @@
+{
+    "checksum": "12a5937465f6a4da5427fa5ab3484e27",
+    "wallpaper": "/home/bae/.config/hypr/wallpaper/used/Firefox_wallpaper.png",
+    "alpha": "100",
+    "special": {
+        "background": "#000000",
+        "foreground": "#bfbfbf",
+        "cursor": "#bfbfbf"
+    },
+    "colors": {
+        "color0": "#000000",
+        "color1": "#9F5B69",
+        "color2": "#C16D7E",
+        "color3": "#A48A78",
+        "color4": "#BC7682",
+        "color5": "#CC7688",
+        "color6": "#B9A18B",
+        "color7": "#bfbfbf",
+        "color8": "#615050",
+        "color9": "#9F5B69",
+        "color10": "#C16D7E",
+        "color11": "#A48A78",
+        "color12": "#BC7682",
+        "color13": "#CC7688",
+        "color14": "#B9A18B",
+        "color15": "#bfbfbf"
+    }
+}

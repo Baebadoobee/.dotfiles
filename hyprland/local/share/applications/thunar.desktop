@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Thunar
+Comment= Thunar file manager.
+Exec=thunar
+Icon=/home/bae/app-icons/folder.svg
+Terminal=false
+Type=Application
+Categories=FileManager;
+PrefersNonDefaultGPU=true
+X-KDE-RunOnDiscreteGpu=true
+Path=
+StartupNotify=false
