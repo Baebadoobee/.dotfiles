@@ -1,0 +1,22 @@
+[general]
+import = ["~/.cache/wal/colors-alacritty.toml"]
+
+[window]
+
+opacity = 0.9 
+#opacity = 0.685
+
+padding.x = 2
+padding.y = 2
+
+#decorations = "FUll"
+#decorations_theme_variant = "Light" # "Dark"
+
+[font]
+
+normal.family = "Fira Code"
+bold.family = "Fira Code"
+italic.family = "Fira Code"
+bold_italic.family = "Fira Code"
+
+size = 10.0

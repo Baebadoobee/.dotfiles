@@ -9,7 +9,6 @@ export DOTNET_ROOT=$HOME/.dotnet
 export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 export sddmt="/usr/share/themes"
 export FBNEOHOME="$HOME/.local/share/fbneo/"
-export GITKEY="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"
  
 fzf_styled() {
   fzf --reverse --border=bold --border=rounded --color='fg:#9595d7,bg:-1,hl:#5f87af' --color='fg+:#d7d4e3,bg+:,hl+:#5b6da5' --color='info:#d7d4e3,prompt:#d7d4e3,pointer:#ae00ff' --color='marker:#d975eb,spinner:#9595d7,header:#9595d7' --preview "bat --color=always {}"
@@ -21,8 +20,8 @@ eval "$(fzf --bash)"
 # Aliases
 alias ls='ls -l --color=auto'
 alias grep='grep --color=auto'
-alias vim='nvim'
-alias vi='/usr/bin/vim'
+#alias vim='nvim'
+#alias vi='/usr/bin/vim'
 alias cat='bat --color=always'
 
 alias pin='sudo pacman -S --noconfirm --color=always'
