@@ -1,4 +1,6 @@
 set relativenumber
+set number
+set numberwidth=4
 set cursorline
 set shiftwidth=2
 set tabstop=2
@@ -9,7 +11,9 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 set wildmenu
 set wildmode=list:longest
 syntax on
-
+hi Normal guibg=NONE ctermbg=NONE
+hi CursorLine cterm=NONE ctermfg=255 ctermbg=130
+hi CursorLineNr cterm=NONE ctermfg=255 ctermbg=130
 
 call plug#begin('~/.vim/plugged')
 
@@ -22,6 +26,8 @@ call plug#begin('~/.vim/plugged')
 	Plug 'psliwka/vim-smoothie'
 	Plug 'preservim/nerdtree'
 	Plug 'tc50cal/vim-terminal'
+	Plug 'tpope/vim-fugitive'
+	Plug 'f-person/git-blame.nvim'
 "	Plug 'vim-airline/vim-airline'
 "	Plug 'vim-airline/vim-airline-themes'
 "	Plug 'bling/vim-bufferline'
@@ -29,9 +35,6 @@ call plug#begin('~/.vim/plugged')
 
 call plug#end()
 
-hi Normal guibg=NONE ctermbg=NONE
-hi CursorLine cterm=NONE ctermfg=255 ctermbg=130
-hi CursorLineNr cterm=NONE ctermfg=255 ctermbg=130
 
 "MAPPINGS  {{{
 	nnoremap <space> <Nop>
@@ -91,26 +94,58 @@ autocmd VimEnter * NERDTreeFind | wincmd p
 
 	set laststatus=2
 	set noshowmode
-	hi StatusLine cterm=bold ctermfg=130 ctermbg=NONE
+
+	hi StatusLine    ctermfg=130  ctermbg=NONE  cterm=bold
+	hi Icon          ctermfg=0    ctermbg=130
+	hi NormalC       ctermfg=130  ctermbg=NONE
+	hi InsertC       ctermfg=130  ctermbg=NONE
+	hi VisualC       ctermfg=130  ctermbg=NONE
+	hi CommandC      ctermfg=130  ctermbg=NONE
+	hi FileName      ctermfg=0    ctermbg=130
+	hi ReadOnly      ctermfg=130  ctermbg=NONE
+	hi FolderName    ctermfg=0    ctermbg=130
+	hi FileFormat    ctermfg=130  ctermbg=NONE
+	hi LinePosition  ctermfg=0    ctermbg=130
+	hi Sep           ctermfg=130  ctermbg=NONE
+
 
 	set statusline=
+	set statusline+=%#Icon#
 	set statusline+=\ \ 
+		set statusline+=%#Sep#
+		set statusline+=
 
-	set statusline+=\ %#NormalC#%{(mode()=='n')?'\ N\ ':''}
-	set statusline+=\ %#InsertC#%{(mode()=='i')?'\ I\ ':''}
-	set statusline+=\ %#VisualC#%{(mode()=='v')?'\ V\ ':''}
-	set statusline+=\ %#CommandC#%{(mode()=='c')?'\ C\ ':''}
+	set statusline+=%#NormalC#%{(mode()=='n')?'\ \ NORMAL\ ':''}
+	set statusline+=%#InsertC#%{(mode()=='i')?'\ \ INSERT\ ':''}
+	set statusline+=%#VisualC#%{(mode()=='v')?'\ \ VISUAL\ ':''}
+	set statusline+=%#CommandC#%{(mode()=='c')?'\ \ COMMAND\ ':''}
+		set statusline+=%#Sep#
+		set statusline+=
 
-	set statusline+=%#Filename#
-	set statusline+=\ %f
+	set statusline+=%#FileName#
+	set statusline+=\ %{fnamemodify(expand('%:p'),':t')}\ 
+		set statusline+=%#Sep#
+		set statusline+=
+
 	set statusline+=%#ReadOnly#
 	set statusline+=\ %r
 	set statusline+=%m
 	set statusline+=%=
-	set statusline+=%#Fileformat#
+		set statusline+=%#Sep#
+		set statusline+=
+
+	set statusline+=%#FolderName#
+	set statusline+=\ \ %{fnamemodify(expand('%:p'),':h:t')}\ 
+		set statusline+=%#Sep#
+		set statusline+=
+
+	set statusline+=%#FileFormat#
 	set statusline+=\ %y
 	set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
-	set statusline+=\ %{&fileformat}
-	set statusline+=%#Position#
-	set statusline+=\ [%l/%L\]
+	set statusline+=\ %{&fileformat}\ 
+		set statusline+=%#Sep#
+		set statusline+=
+
+	set statusline+=%#LinePosition#
+	set statusline+=\ %P\ 󰦪\ %l/%L\ 
 "}}}
