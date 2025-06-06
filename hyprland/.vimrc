@@ -105,7 +105,7 @@ noremap <silent><leader>s :split<CR>
 noremap <silent><leader>v :vsplit<CR>
 noremap <silent><leader>q :qa!<CR>
 noremap <silent><leader>w :w<CR>
-noremap <silent><tab> :bnext<CR>
+noremap <silent><tab> :bnext!<CR>
 noremap <silent><F12> :wqa!<CR>
 
 "Tools
@@ -195,36 +195,24 @@ let g:currentmode={
 
 "StatusLine customization
 set statusline=
-set statusline+=%#Icon#
-set statusline+=\ \ 
-  set statusline+=%#Sep#
-  set statusline+=
+set statusline+=%#Icon#\ \ 
+  set statusline+=%#Sep#
 set statusline+=%#NormalC#%{(mode()=='n')?'\ \ NORMAL\ ':''}
 set statusline+=%#InsertC#%{(mode()=='i')?'\ \ INSERT\ ':''}
 set statusline+=%#VisualC#%{(mode()=='v')?'\ \ VISUAL\ ':''}
 set statusline+=%#CommandC#%{(mode()=='c')?'\ \ COMMAND\ ':''}
 set statusline+=%#TermC#%{(mode()=='t')?'\ \ TERM\ ':''}
-  set statusline+=%#Sep#
-  set statusline+=
-set statusline+=%#FileName#
-set statusline+=\%{BufferList()}\ 
-  set statusline+=%#Sep#
-  set statusline+=
-set statusline+=%#ReadOnly#
-set statusline+=\ %r
-set statusline+=%m
-set statusline+=%=
-  set statusline+=%#Sep#
-  set statusline+=
-set statusline+=%#FolderName#
-set statusline+=\ \ %{fnamemodify(expand('%:p'),':h:t')}\ 
-  set statusline+=%#Sep#
-  set statusline+=
+  set statusline+=%#Sep#
+set statusline+=%#FileName#\%{BufferList()}\ 
+  set statusline+=%#Sep#
+set statusline+=%#ReadOnly#\ %r%m%=
+  set statusline+=%#Sep#
+set statusline+=%#FolderName#\ \ %{fnamemodify(expand('%:p'),':h:t')}\ 
+  set statusline+=%#Sep#
 set statusline+=%#FileFormat#
 set statusline+=\ %y
 set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
 set statusline+=\ %{&fileformat}\ 
-  set statusline+=%#Sep#
-  set statusline+=
+  set statusline+=%#Sep#
 set statusline+=%#LinePosition#
 set statusline+=\ %P\ 󰦪\ %l/%L\ 
