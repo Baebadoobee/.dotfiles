@@ -10,9 +10,8 @@
 "       █  █   ▐    █  ▀███▀        █  █ █  █      ▐  ███  
 "        █▐        ▀                █   ██   ▀             
 "        ▐                                                 
-"      
 "
-" Pay attention to the lines: 29, 199, 217 and 222 
+" Pay attention to the lines: 27, 210, 227 and 232 
 "======================================================================
 " INDENTATION AND MISC
 "======================================================================
@@ -203,6 +202,7 @@ let g:currentmode={
   hi! link ALEErrorSign               WarningMsg
   hi! link ALEWarningSign             MoreMsg
   hi! link ALEInfoSign                Title
+  hi! link ALEErrorLine               WarningMsg
 
   "Statusline Colors
   hi! link StatusLine   WarningMsg
