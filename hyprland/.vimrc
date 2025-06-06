@@ -76,6 +76,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'tc50cal/vim-terminal'
 	Plug 'tpope/vim-fugitive'
 	Plug 'f-person/git-blame.nvim'
+  Plug 'airblade/vim-gitgutter'
   Plug 'girishji/vimcomplete'
   Plug 'morhetz/gruvbox'
 	Plug 'dense-analysis/ale'
@@ -88,6 +89,8 @@ call plug#end()
 
 "Initial definitions
 nnoremap <space> <Nop>
+let mapleader = " "
+
 nnoremap <s-l> <Nop>
 nnoremap <s-h> <Nop>
 nnoremap <s-j> <Nop>
@@ -96,8 +99,7 @@ vnoremap <s-l> <Nop>
 vnoremap <s-h> <Nop>
 vnoremap <s-j> <Nop>
 vnoremap <s-k> <Nop>
-let mapleader = " "
-let g:smoothie_no_default_mappings = 1
+let g:smoothie_no_default_mappings = 0
 
 "Navigation
 noremap <c-h> <c-w>h
@@ -150,7 +152,6 @@ tnoremap <silent><leader>h exit<CR>
   vnoremap <silent> <s-k> <Plug>(SmoothieUpwards)
   vnoremap <silent> <s-j> <Plug>(SmoothieDownwards)
 
-
 "======================================================================
 " AUTOSCRIPTS
 "======================================================================
@@ -188,10 +189,20 @@ let g:currentmode={
   "Layout Colors
   hi Normal guibg=NONE ctermbg=NONE
   hi EndOfBuffer cterm=NONE ctermbg=NONE ctermfg=0
-  hi! link StatusLineNC Normal
-  hi! link VertSplit    Statement
-  hi! link CursorLine   ErrorMsg
-  hi! link CursorLineNr ErrorMsg
+  hi! link SignColumn                 EndOfBuffer
+  hi! link StatusLineNC               Normal
+  hi! link VertSplit                  Statement
+  hi! link CursorLine                 ErrorMsg
+  hi! link CursorLineNr               ErrorMsg
+  hi! link CursorLineSign             CursorLine
+  hi! link SingColumn                 CursorLineSign
+  hi! link ALESignColumnWithoutErrors LineNrAbove
+  hi! link ALEError                   LineNrAbove
+  hi! link ALEWarning                 LineNrAbove
+  hi! link ALEInfo                    LineNrAbove
+  hi! link ALEErrorSign               WarningMsg
+  hi! link ALEWarningSign             MoreMsg
+  hi! link ALEInfoSign                Title
 
   "Statusline Colors
   hi! link StatusLine   WarningMsg
@@ -208,7 +219,6 @@ let g:currentmode={
   hi! link Icon         ErrorMsg
   hi! link FolderName   ErrorMsg
   hi! link LinePosition ErrorMsg
-
 
 "StatusLine customization
 set statusline=
