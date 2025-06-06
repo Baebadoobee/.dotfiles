@@ -1,4 +1,19 @@
-
+"     
+"                           ███   ██   ▄███▄     ▄▄▄▄▄     
+"                           █  █  █ █  █▀   ▀   █     ▀▄   
+"                           █ ▀ ▄ █▄▄█ ██▄▄   ▄  ▀▀▀▀▄     
+"                           █  ▄▀ █  █ █▄   ▄▀ ▀▄▄▄▄▀      
+"         ▄   ▄█ █▀▄▀█ ▄█▄  ██████▄  █ ▄███▄████  ▄█   ▄▀  
+"          █  ██ █ █ █ █▀ ▀▄  █   █ █   █  █▀   ▀ ██ ▄▀    
+"     █     █ ██ █ ▄ █ █   ▀  █   █▀██   █ █▀▀    ██ █ ▀▄  
+"      █    █ ▐█ █   █ █▄  ▄▀ ▀████ █ █  █ █      ▐█ █   █ 
+"       █  █   ▐    █  ▀███▀        █  █ █  █      ▐  ███  
+"        █▐        ▀                █   ██   ▀             
+"        ▐                                                 
+"      
+" Notes 
+" 1. Pay attention to the lines: 29, 199
+"
 "======================================================================
 " INDENTATION AND MISC
 "======================================================================
@@ -11,7 +26,7 @@ set shiftwidth=2
 set tabstop=2
 set expandtab
 set nobackup
-set ignorecase
+"set ignorecase
 set showmatch
 set hlsearch
 set incsearch
@@ -162,6 +177,7 @@ let g:currentmode={
   \ 'n' : 'NORMAL',
   \ 'v' : 'VISUAL',
   \ 'V' : 'V-LINE',
+  \ '\' : 'V-BLOCK',
   \ 'i' : 'INSERT',
   \ 't' : 'TERM',
   \ 'R' : 'R',
@@ -180,11 +196,12 @@ let g:currentmode={
 
   "Statusline Colors
   hi! link StatusLine   WarningMsg
-  hi! link NormalC      WarningMsg
-  hi! link InsertC      WarningMsg 
-  hi! link VisualC      WarningMsg
-  hi! link CommandC     WarningMsg
-  hi! link TermC        WarningMsg
+  hi! link ModeC        WarningMsg
+"  hi! link NormalC      WarningMsg
+"  hi! link InsertC      WarningMsg 
+"  hi! link VisualC      WarningMsg
+"  hi! link CommandC     WarningMsg
+"  hi! link TermC        WarningMsg
   hi! link ReadOnly     WarningMsg
   hi! link FileFormat   WarningMsg
   hi! link Sep          WarningMsg
@@ -198,11 +215,15 @@ let g:currentmode={
 set statusline=
 set statusline+=%#Icon#\ \ 
   set statusline+=%#Sep#
-set statusline+=%#NormalC#%{(mode()=='n')?'\ \ NORMAL\ ':''}
-set statusline+=%#InsertC#%{(mode()=='i')?'\ \ INSERT\ ':''}
-set statusline+=%#VisualC#%{(mode()=='v')?'\ \ VISUAL\ ':''}
-set statusline+=%#CommandC#%{(mode()=='c')?'\ \ COMMAND\ ':''}
-set statusline+=%#TermC#%{(mode()=='t')?'\ \ TERM\ ':''}
+set statusline+=%#ModeC#
+set statusline+=%{(mode()=='n')?'\ \ NORMAL\ ':''}
+set statusline+=%{(mode()=='i')?'\ \ INSERT\ ':''}
+set statusline+=%{(mode()=='v')?'\ \ VISUAL\ ':''}
+set statusline+=%{(mode()=='V')?'\ \ V-LINE\ ':''}
+set statusline+=%{(char2nr(mode())==22)?'\ \ V-BLOCK\ ':''} "Idfk why it was only accepting a literal '\' 
+set statusline+=%{(mode()=='Rv')?'\ \ V-REPLACE\ ':''}
+set statusline+=%{(mode()=='c')?'\ \ COMMAND\ ':''}
+set statusline+=%{(mode()=='t')?'\ \ TERM\ ':''}
   set statusline+=%#Sep#
 set statusline+=%#FileName#\%{BufferList()}\ 
   set statusline+=%#Sep#
