@@ -36,13 +36,13 @@ function! BufferList()
   let res = []
   for b in all
     if buflisted(b)
-      let name = bufname(b)!= '' ? fnamemodify(bufname(b), ':t') : '[No Name]'
+      let name = bufname(b)!= '' ? fnamemodify(bufname(b), ':t') : ' new-file'
       let modified = getbufvar(b, '&modified') ? '+' : ''
       let current = b == bufnr('%') ? '' : ' '
       let res += [current . name . modified]
     endif
   endfor
-  return join(res, ' │ ')
+  return join(res, ' │')
 endfunction
 
 "======================================================================
@@ -171,11 +171,11 @@ let g:currentmode={
 "Colors
   "Layout Colors
   hi Normal guibg=NONE ctermbg=NONE
-  hi! link StatusLineNC Normal
-  hi! link CursorLine ErrorMsg
-  hi! link CursorLineNr ErrorMsg
   hi EndOfBuffer cterm=NONE ctermbg=NONE ctermfg=0
-  hi! link VertSplit Statement
+  hi! link StatusLineNC Normal
+  hi! link VertSplit    Statement
+  hi! link CursorLine   ErrorMsg
+  hi! link CursorLineNr ErrorMsg
 
   "Statusline Colors
   hi! link StatusLine   WarningMsg

@@ -107,7 +107,7 @@
       // "interface": "wlp2*", // (Optional) To force the use of this interface
       //"format-wifi": "{icon}   {essid}",
       "format-wifi": "{icon}",
-      "format-ethernet": "{ipaddr}/{cidr} 󰈀",
+      "format-ethernet": "󰈀",
       "tooltip-format": "{icon}   {essid}",
       "on-click": "alacritty --hold --class taskbar-utils -e nmcli device wifi; alacritty -e ./~/.config/hypr/scripts/wifi-scan.sh;",
       //"tooltip-format": "{ifname} via {gwaddr} 󰈀",
