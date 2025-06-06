@@ -121,6 +121,7 @@ tnoremap <silent><leader>h exit<CR>
   nnoremap ç :
   nnoremap ; :
   nnoremap <leader>; :!
+  nnoremap <leader>uv :!exec $HOME/.pushvim.ps1 &<CR>
   nnoremap <leader>o o<esc>
   nnoremap <leader>O O<esc>
   nnoremap Y y$
