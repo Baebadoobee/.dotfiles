@@ -11,9 +11,8 @@
 "        █▐        ▀                █   ██   ▀             
 "        ▐                                                 
 "      
-" Notes 
-" 1. Pay attention to the lines: 29, 199
 "
+" Pay attention to the lines: 29, 199, 217 and 222 
 "======================================================================
 " INDENTATION AND MISC
 "======================================================================
@@ -26,7 +25,7 @@ set shiftwidth=2
 set tabstop=2
 set expandtab
 set nobackup
-"set ignorecase
+"set ignorecase "So, if you activate this, the Modes won't work very well. You may fix it yourself :D
 set showmatch
 set hlsearch
 set incsearch
@@ -197,11 +196,11 @@ let g:currentmode={
   "Statusline Colors
   hi! link StatusLine   WarningMsg
   hi! link ModeC        WarningMsg
-"  hi! link NormalC      WarningMsg
-"  hi! link InsertC      WarningMsg 
-"  hi! link VisualC      WarningMsg
-"  hi! link CommandC     WarningMsg
-"  hi! link TermC        WarningMsg
+" hi! link NormalC      WarningMsg "You can try this aproach to assign different colors for each mode
+" hi! link InsertC      WarningMsg 
+" hi! link VisualC      WarningMsg
+" hi! link CommandC     WarningMsg
+" hi! link TermC        WarningMsg
   hi! link ReadOnly     WarningMsg
   hi! link FileFormat   WarningMsg
   hi! link Sep          WarningMsg
@@ -215,13 +214,14 @@ let g:currentmode={
 set statusline=
 set statusline+=%#Icon#\ \ 
   set statusline+=%#Sep#
-set statusline+=%#ModeC#
+set statusline+=%#ModeC# "Keep in mind that you can create a function to clean up the mode theming lines
 set statusline+=%{(mode()=='n')?'\ \ NORMAL\ ':''}
 set statusline+=%{(mode()=='i')?'\ \ INSERT\ ':''}
 set statusline+=%{(mode()=='v')?'\ \ VISUAL\ ':''}
 set statusline+=%{(mode()=='V')?'\ \ V-LINE\ ':''}
 set statusline+=%{(char2nr(mode())==22)?'\ \ V-BLOCK\ ':''} "Idfk why it was only accepting a literal '\' 
 set statusline+=%{(mode()=='Rv')?'\ \ V-REPLACE\ ':''}
+set statusline+=%{(mode()=='R')?'\ 󰬳\ REPLACE\ ':''}
 set statusline+=%{(mode()=='c')?'\ \ COMMAND\ ':''}
 set statusline+=%{(mode()=='t')?'\ \ TERM\ ':''}
   set statusline+=%#Sep#
