@@ -25,6 +25,7 @@ set tabstop=2
 set expandtab
 set nobackup
 "set ignorecase "So, if you activate this, the Modes won't work very well. You may fix it yourself :D
+set signcolumn=yes
 set showmatch
 set hlsearch
 set incsearch
@@ -34,7 +35,7 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 set wildmenu
 set wildmode=list:longest
 set mouse=a
-set termwinsize=20x200
+set termwinsize=10x200
 syntax on
 filetype on
 filetype plugin on
@@ -157,6 +158,15 @@ tnoremap <silent><leader>h exit<CR>
 
 autocmd VimEnter * NERDTreeFind | wincmd p | NERDTreeToggle
 
+augroup nerdtreehidecwd
+  autocmd!
+  autocmd FileType nerdtree setlocal conceallevel=3
+          \ | syntax match NERDTreeHideCWD #^[</].*$# conceal
+          \ | setlocal concealcursor=n
+augroup end
+
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+
 "======================================================================
 " THEMING 
 "======================================================================
@@ -168,6 +178,8 @@ set laststatus=2
 set noshowmode
 set fillchars=eob:\ 
 set fillchars=vert:\│
+let NERDTreeWinPos="right"
+let NERDTreeWinSize=30
 let g:NERDTreeMinimalUI=1
 let g:NERDTreeMinimalMenu=1
 let g:NERDTreeCascadeSingleChildDir=1
