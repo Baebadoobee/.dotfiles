@@ -25,6 +25,7 @@ set tabstop=2
 set expandtab
 set nobackup
 "set ignorecase "So, if you activate this, the Modes won't work very well. You may fix it yourself :D
+set nowrap
 set signcolumn=yes
 set showmatch
 set hlsearch
@@ -82,6 +83,21 @@ call plug#begin('~/.vim/plugged')
 	Plug 'dense-analysis/ale'
 
 call plug#end()
+
+"======================================================================
+" AUTOSCRIPTS
+"======================================================================
+
+autocmd VimEnter * NERDTreeFind | wincmd p | NERDTreeToggle
+
+augroup nerdtreehidecwd
+  autocmd!
+  autocmd FileType nerdtree setlocal conceallevel=3
+          \ | syntax match NERDTreeHideCWD #^[</].*$# conceal
+          \ | setlocal concealcursor=n
+augroup end
+
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
 "======================================================================
 " MAPPINGS
@@ -153,21 +169,6 @@ tnoremap <silent><leader>h exit<CR>
   vnoremap <silent> <s-j> <Plug>(SmoothieDownwards)
 
 "======================================================================
-" AUTOSCRIPTS
-"======================================================================
-
-autocmd VimEnter * NERDTreeFind | wincmd p | NERDTreeToggle
-
-augroup nerdtreehidecwd
-  autocmd!
-  autocmd FileType nerdtree setlocal conceallevel=3
-          \ | syntax match NERDTreeHideCWD #^[</].*$# conceal
-          \ | setlocal concealcursor=n
-augroup end
-
-autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
-
-"======================================================================
 " THEMING 
 "======================================================================
 
@@ -234,6 +235,7 @@ let g:currentmode={
 
 "StatusLine customization
 set statusline=
+  "set statusline+=%#Sep#
 set statusline+=%#Icon#\ \ 
   set statusline+=%#Sep#
 set statusline+=%#ModeC# "Keep in mind that you can create a function to clean up the mode theming lines
@@ -252,11 +254,13 @@ set statusline+=%#FileName#\%{BufferList()}\
 set statusline+=%#ReadOnly#\ %r%m%=
   set statusline+=%#Sep#
 set statusline+=%#FolderName#\ \ %{fnamemodify(expand('%:p'),':h:t')}\ 
-  set statusline+=%#Sep#
-set statusline+=%#FileFormat#
-set statusline+=\ %y
-set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
-set statusline+=\ %{&fileformat}\ 
-  set statusline+=%#Sep#
+set statusline+=│
+  "set statusline+=%#Sep#
+"set statusline+=%#FileFormat#
+"set statusline+=\ %y
+"set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
+"set statusline+=\ %{&fileformat}\ 
+  "set statusline+=%#Sep#
 set statusline+=%#LinePosition#
 set statusline+=\ %P\ 󰦪\ %l/%L\ 
+  "set statusline+=%#Sep#
