@@ -15,7 +15,6 @@
 "======================================================================
 " INDENTATION AND MISC
 "======================================================================
-
 set relativenumber
 set number
 set numberwidth=4
@@ -24,7 +23,7 @@ set shiftwidth=2
 set tabstop=2
 set expandtab
 set nobackup
-"set ignorecase "So, if you activate this, the Modes won't work very well. You may fix it yourself :D
+"set ignorecase "If you activate this, the Modes won't work very well. You may fix it yourself :D
 set nowrap
 set signcolumn=yes
 set showmatch
@@ -37,6 +36,7 @@ set wildmenu
 set wildmode=list:longest
 set mouse=a
 set termwinsize=10x200
+set completeopt=menuone,preview,noinsert,noselect
 syntax on
 filetype on
 filetype plugin on
@@ -99,6 +99,10 @@ augroup end
 
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
+autocmd BufEnter NERD_tree_* | execute 'normal R'
+
+autocmd FileType c set omnifunc=ccomplete#Complete
+
 "======================================================================
 " MAPPINGS
 "======================================================================
@@ -152,6 +156,7 @@ tnoremap <silent><leader>h exit<CR>
   "Normal
   nnoremap ç :
   nnoremap ; :
+  nnoremap \ 0ci"
   nnoremap <leader>; :!
   nnoremap <leader>uv :!exec $HOME/.pushvim.ps1 &<CR>
   nnoremap <leader>o o<esc>
@@ -163,6 +168,8 @@ tnoremap <silent><leader>h exit<CR>
   "Insert
   inoremap jk <esc>
   inoremap kj <esc>
+  inoremap <expr> <Tab> pumvisible() ? "\<C-n>\<CR>\<BS>\<leader>" : "\<Tab>"
+  inoremap <expr> <CR> pumvisible() ? "\<CR>\<BS>" : "\<CR>"
 
   "Visual
   vnoremap <silent> <s-k> <Plug>(SmoothieUpwards)
