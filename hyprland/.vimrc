@@ -223,6 +223,10 @@ let g:currentmode={
   hi! link ALEWarningSign             MoreMsg
   hi! link ALEInfoSign                Title
   hi! link ALEErrorLine               WarningMsg
+  hi! link GitGutterAdd               Function
+  hi! link GitGutterChange            Changed
+  hi! link GitGutterDelete            WarningMsg
+  hi! link GitGutterChangeDelete      Removed
 
   "Statusline Colors
   hi! link StatusLine   WarningMsg
