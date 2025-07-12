@@ -103,6 +103,8 @@ autocmd BufEnter NERD_tree_* | execute 'normal R'
 
 autocmd FileType c set omnifunc=ccomplete#Complete
 
+autocmd BufEnter *.md execute 'noremap <F5> :!exec firefox --new-window "%:p"<CR>'
+
 "======================================================================
 " MAPPINGS
 "======================================================================
@@ -146,6 +148,7 @@ noremap <silent><F12> :wqa!<CR>
 
 "Tools
 noremap <silent><leader>p :PlugInstall<CR>
+noremap <silent><leader>a :ALEToggleBuffer<CR>
 noremap <silent><c-n> :NERDTreeToggle<CR>
 noremap <silent><leader>f :NERDTreeFind<CR>
 noremap <silent><leader>th :colorscheme<leader><c-d>
@@ -168,8 +171,7 @@ tnoremap <silent><leader>h exit<CR>
   "Insert
   inoremap jk <esc>
   inoremap kj <esc>
-  inoremap <expr> <Tab> pumvisible() ? "\<C-n>\<CR>\<BS>\<leader>" : "\<Tab>"
-  inoremap <expr> <CR> pumvisible() ? "\<CR>\<BS>" : "\<CR>"
+  inoremap <expr> <Tab> pumvisible() ? "\<CR>" : "\<Tab>"
 
   "Visual
   vnoremap <silent> <s-k> <Plug>(SmoothieUpwards)
