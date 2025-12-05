@@ -1,0 +1,150 @@
+  {
+  "name": "bar1",
+  "layer": "bottom",
+  "position": "bottom",
+  "height": 20,
+    "modules-left": [
+      "custom/supah",
+      "custom/sep",
+      "hyprland/workspaces"
+    ],
+    "modules-center": [
+      "hyprland/window"
+    ],
+    "modules-right": [
+      "tray",
+      "pulseaudio",
+      "pulseaudio/slider",
+      "battery", 
+      "network",
+      "clock",
+      "custom/exit"
+    ],
+
+    "custom/pacman": {
+      "format": " {}   ",
+      "interval": "once",
+      "exec": "checkupdates | wc -l",
+      "on-click": "update-system",
+      "signal": 8
+    },
+
+    "custom/supah": {
+      "format": "󰣇",
+      "tooltip": false,
+      "max-length": 1,
+      "on-click": "~/Archlinux/Archlinux"
+    },
+
+    "custom/media": {
+      "format": "{icon}{}",
+      "escape": true,
+      "return-type": "json",
+      "max-length": 40,
+      "on-click": "playerctl play-pause",
+      "on-click-right": "playerctl stop",
+      "smooth-scrolling-threshold": 10, // This value was tested using a trackpad, it should be lowered if using a mouse.
+      "on-scroll-up": "playerctl next",
+      "on-scroll-down": "playerctl previous",
+      "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null" // Script in resources/custom_modules folder
+    },
+
+    "hyprland/workspaces": {
+      "format": "{icon}",
+      "on-click": "activate",
+      "format-icons": {
+        "urgent": "",
+        "active": "󰽢",
+        "default": ""
+      }
+    },
+
+    "hyprland/window": {
+      "format": "{initialTitle}",
+      "icon": false
+    },
+
+    "battery": {
+      "format": "{icon}  {capacity}%",
+      "format-charging": "󰂄  {capacity}%",
+      "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    },
+
+    "clock": {
+      "format": "󰥔 {:%I:%M%p}",
+      "tooltip": true,
+      "tooltip-format": "{:%a, %d. %b  %I:%M%p}"
+    },
+
+    "pulseaudio/slider": {
+      "orientation": "horizontal",
+      "min": 0,
+      "max": 100
+    },
+
+    "pulseaudio": {
+      "format": "{icon}",
+      "format-bluetooth": "󰂱  {volume}%",
+      "format-muted": "󰖁 ",
+      "scroll-step": 5,
+      //"on-click": "",
+      "on-click-right": "pwvucontrol & easyeffects",
+      "ignored-sinks": ["Easy Effects Sink"],
+      "format-icons": {
+        "headphone": " ",
+        "hands-free": " ",
+        "headset": "󰋎 ",
+        "phone": " ",
+        "portable": " ",
+        "car": "",
+        "default": ["󰖀 ", "󰕾 "]
+      }
+    },
+
+  "network": {
+      // "interface": "wlp2*", // (Optional) To force the use of this interface
+      //"format-wifi": "{icon}   {essid}",
+      "format-wifi": "{icon}",
+      "format-ethernet": "󰈀",
+      "tooltip-format": "{icon}   {essid}",
+      "on-click": "alacritty --hold --class taskbar-utils -e nmcli device wifi; alacritty -e ./~/.config/hypr/scripts/wifi-scan.sh;",
+      //"tooltip-format": "{ifname} via {gwaddr} 󰈀",
+      //"format-linked": "{ifname} (No IP) 󰈀",
+      // "format-alt": "{ifname}: {ipaddr}/{cidr}",
+      "format-disconnected": "󰤭   disconnected",
+      "max-length": 50,
+      "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
+    },
+
+
+    "backlight": {
+      "device": "intel_backlight",
+      "format": "{icon}   {percent}%",
+      "format-icons": ["󰃞", "󰃟", "󰃠"]
+    },
+
+    "custom/weather": {
+      "exec": "${HOME}/.config/waybar/scripts/get_weather.sh",
+      "return-type": "json",
+      "format": "{}",
+      "tooltip": true,
+      "interval": 3600
+    },
+
+    "tray": {
+      "icon-size": 14,
+      "spacing": 10
+    },
+
+    "custom/sep": {
+        "format": "||",
+        "tooltip": false
+    },
+
+    "custom/exit": {
+      "format": "",
+      "tooltip": false,
+      "max-length": 1,
+      "on-click": "wlogout"
+    }
+  }

@@ -1,0 +1,26 @@
+[general]
+import = ["colors-alacritty.toml"]
+
+[window]
+
+opacity = 1
+
+padding.x = 0
+padding.y = 0
+
+decorations = "FUll"
+decorations_theme_variant = "Dark" # "Dark"
+
+[font]
+
+normal.family = "Fira Code Nerd Font Mono"
+bold.family = "Fira Code Nerd Font Mono"
+italic.family = "Fira Code Nerd Font Mono"
+bold_italic.family = "Fira Code Nerd Font Mono"
+
+size = 8
+
+[colors.cursor]
+
+text="#d96262"
+cursor="#0B0C0D"

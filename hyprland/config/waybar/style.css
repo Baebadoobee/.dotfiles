@@ -1,0 +1,163 @@
+@import './colors-waybar.css';
+/* General -------------------------------------------------------*/
+
+* {
+    font-family: 'Fira Code', sans-serif, 'Droid Sans Mono', 'monospace', monospace, 'Hack Nerd Font', 'Nerd Font';
+    font-size: 14px;
+    /*
+    font-weight: bold;
+    */
+}
+
+window#waybar {
+    /*
+    border-width: 0;
+    border-style: solid;
+    border-color: @color2;
+    background-color: @background;
+    */
+    background-color: transparent;
+    opacity: 1;
+    color: @background;
+}
+
+.bar1 {
+    /*
+    border-width: 0;
+    border-style: solid;
+    border-color: @color3;
+    background-color: @background;
+    border-radius: 0; 
+
+    color: @background;
+    */
+    min-height: 0px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Module groups -------------------------------------------------
+.modules-right, .modules-left, .modules-center {
+    background: @background;
+    border-color: @color3;
+}
+    .modules-left {margin: 5px 5px 5px 15px;} * N E S W*
+    .modules-right {margin: 5px 15px 5px 5px;}
+
+*/
+.modules-left {
+    margin: 0;
+    padding-right: 20px;
+    background-color: @background;
+    border-top-right-radius: 30px;
+} /* N E S W*/
+.modules-right {
+    margin: 0;
+    padding: 0 10px 0 20px;
+    background-color: @background;
+    border-top-left-radius: 30px;
+}
+
+/* Modules -------------------------------------------------------*/
+
+/*-- Mod-colors --*/
+#custom-exit, #custom-supah, #pulseaudio {color: @color5;}
+#custom-sep {color: @foreground;}
+#clock, #tray {color: @color3;}
+#clock:hover, #custom-exit:hover, #custom-supah:hover {color: @color2;}
+#network {color: @color4;}
+
+/*-- Mod-config --*/
+
+#custom-sep {font-size: 8; padding: 5;}
+
+/* Top-Mods */
+#clock, #tray {
+    padding: 5px;
+}
+
+/* Mid-Mods */
+#workspaces {
+    background-color: transparent;
+    padding: 0; /* 0.3em Adjust padding here */
+}
+
+#window {
+    border-radius: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: @color1;
+}
+
+#window:hover {
+    color: @color5;
+}
+
+/* make window module transparent when no windows present */
+window#waybar.empty #window {
+    background-color: transparent;
+}
+
+#workspaces button {box-shadow: none; border-color: transparent;}
+#workspaces button.active {color: @foreground;}
+#workspaces button:hover {background: transparent;}
+
+/* Bot-Mods */
+#custom-exit {
+    padding: 5px;
+}
+
+#custom-supah {
+    padding: 0 10px 0 5px;
+    font-size: large;
+}
+
+#pulseaudio, #network{
+    padding: 10px;
+}
+
+/* Pulseaudio-slider ---------------------------------------------*/
+
+#pulseaudio-slider {
+    margin: 0;
+    padding: 0;
+}
+
+#pulseaudio-slider slider {
+    min-height: 0px;
+    min-width: 0px;
+    opacity: 0;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+}
+
+#pulseaudio-slider trough {
+    min-height: 2px;
+    min-width: 80px;
+    margin-right: 8px;
+    border-radius: 0px;
+    background-color: @background;
+}
+
+#pulseaudio-slider highlight {
+    min-width: 3px;
+    border-radius: 0px;
+    background-color: @foreground;
+}
+
+/* Misc ----------------------------------------------------------*/
+
+tooltip {
+    color: @color2;
+    background-color: @background;
+    opacity: 0.6;
+  }
+
+/* 
++- Unused ---------------------------------------------+
+| #backlight {color: @color5;}                         |
+| #custom-weather {color: @color4;}                    |
+| #custom-media {color: @color4;}                      |
++- Unused ---------------------------------------------+ 
+*/ 

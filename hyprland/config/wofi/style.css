@@ -1,0 +1,93 @@
+@import '.config/wofi/colors-wofi.css';
+
+/* STYLE */
+window {
+    margin: 0px;
+    border: none;
+    background-color: transparent;
+    border-radius: 0px;
+    opacity: 0.8;
+}
+
+/* Search box */
+#input {
+    padding: 4px;
+    margin: 4px;
+    padding-left: 20px;
+    border: 1px solid @foreground;
+    color: @background;
+    font-weight: bold;
+    background-color: @background;
+   	outline: none;
+    border-radius: 15px;
+    margin: 10px;
+    margin-bottom: 2px;
+}
+
+#input:focus {
+    border: none;
+    color: @foreground;
+    margin-bottom: 0px;
+}
+
+/* Itens shown box */
+#inner-box {
+    margin: 0;
+    border: none;
+    color: @foreground;
+    font-weight: bold;
+    background-color: transparent;
+    border-radius: 6px;
+}
+
+/* General box */
+#outer-box {
+    margin: 0;
+    border: none;
+    background-color: @background;
+}
+
+/* Scroll */
+#scroll {
+    margin-top: 5px;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    /* background: rgb(255,255,255); */
+}
+
+/* Itens shown */
+#img, #text {
+    padding-left: 4px;
+    border: none;
+    border-radius: 0;
+}
+
+#img:selected {
+    padding-left: 10px;
+    background-color: transparent;
+}
+
+#text {
+    border: none;
+    border-radius: 0;
+}
+
+#text:selected {
+    color: @foreground;
+    font-weight: bold;
+    margin: 0px 0px;
+    background-color: transparent;
+}
+
+#entry {
+    margin: 0px 0px;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+#entry:selected {
+    margin: 0px 0px;
+    background-color: alpha(@color4, 0.6);
+}

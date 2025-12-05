@@ -1,0 +1,25 @@
+[Settings]
+language = en
+folder = ~/.config/hypr/wallpaper/unixporn-disc
+wallpaper = ~/.config/hypr/wallpaper/unixporn-disc/lain.gif
+backend = swww
+fill = fill
+sort = namerev
+color = #FFFFFF
+subfolders = False
+show_hidden = True
+show_gifs_only = False
+show_transition_options = True
+post_command = 
+number_of_columns = 3
+swww_transition_type = any
+swww_transition_step = 144
+swww_transition_angle = 2
+swww_transition_duration = 0.3
+swww_transition_fps = 60
+use_xdg_state = False
+show_path_in_tooltip = True
+all_subfolders = False
+mpvpaper_sound = False
+mpvpaper_options = 
+

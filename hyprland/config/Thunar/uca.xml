@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>alacritty-simple</icon>
+	<name>Open terminal here</name>
+	<submenu></submenu>
+	<unique-id>1749328499716330-1</unique-id>
+	<command>alacritty</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>gvim</icon>
+	<name>Open in Vim</name>
+	<submenu></submenu>
+	<unique-id>1749328546297128-2</unique-id>
+	<command>alacritty --config-file $HOME/.config/alacritty/vim.toml --class vim -T Vim -e vim %F</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>/home/bae/.icons/appicons/pwsh.png</icon>
+	<name>PowerShell</name>
+	<submenu></submenu>
+	<unique-id>1749329804265046-1</unique-id>
+	<command>alacritty -e pwsh -nop -nol</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+</action>
+</actions>
