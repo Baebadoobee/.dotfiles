@@ -31,5 +31,3 @@ set    index-fg                  "#fcb484"
 set    index-active-fg           "#fcb484"
 
 set    highlight-color           "rgba(56, 58, 76, 0.5)"
-
-map e exec "/home/bae/.local/share/zathura/highlight_text.sh '$FILE' '$PAGE'"
