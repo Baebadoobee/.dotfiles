@@ -7,10 +7,11 @@
 
 export DOTNET_ROOT=$HOME/.dotnet
 export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
-export sddmt="/usr/share/themes"
+export SDDMT="/usr/share/themes"
 export FBNEOHOME="$HOME/.local/share/fbneo/"
 export GITHOME="https://github.com/Baebadoobee"
 export FZF_DEFAULT_OPTS="--reverse --border=bold --border=rounded --color='fg:#9595d7,bg:-1,hl:#5f87af' --color='fg+:#d7d4e3,bg+:,hl+:#5b6da5' --color='info:#d7d4e3,prompt:#d7d4e3,pointer:#ae00ff' --color='marker:#d975eb,spinner:#9595d7,header:#9595d7'"
+export DOTFILES="$HOME/.dotfiles"
  
 fzf_styled() {
   fzf --reverse --border=bold --border=rounded --color='fg:#9595d7,bg:-1,hl:#5f87af' --color='fg+:#d7d4e3,bg+:,hl+:#5b6da5' --color='info:#d7d4e3,prompt:#d7d4e3,pointer:#ae00ff' --color='marker:#d975eb,spinner:#9595d7,header:#9595d7' --preview "bat --color=always {}"
@@ -45,7 +46,7 @@ alias ysu='yay -Syyu --noconfirm --color=always'
 alias ysy='yay -Syy --noconfirm --color=always'
 
 alias work='cd $HOME/Code; ./$(fzf_styled); exit'
-alias sysclean='cd $HOME/.sysad-scripts; sudo ./cleansys.sh'
+alias ccache='cd $DOTFILES/hyprland; sudo ./cleansys.sh'
 
 PS1='\[\e[36m\](\u) \[\e[36m\]\W .sh\>\[\e[0m\] '
 
@@ -55,3 +56,4 @@ PS1='\[\e[36m\](\u) \[\e[36m\]\W .sh\>\[\e[0m\] '
 
 # Created by `pipx` on 2025-06-03 03:41:10
 export PATH="$PATH:/home/bae/.local/bin"
+export LIBVIRT_DEFAULT_URI="qemu:///system"
