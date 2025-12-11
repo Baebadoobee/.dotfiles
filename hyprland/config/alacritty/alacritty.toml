@@ -18,7 +18,7 @@ bold.family = "Fira Code Nerd Font Mono"
 italic.family = "Fira Code Nerd Font Mono"
 bold_italic.family = "Fira Code Nerd Font Mono"
 
-size = 10
+size = 8
 
 [colors.cursor]
 
