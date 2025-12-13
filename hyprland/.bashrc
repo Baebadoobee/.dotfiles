@@ -46,7 +46,8 @@ alias ysu='yay -Syyu --noconfirm --color=always'
 alias ysy='yay -Syy --noconfirm --color=always'
 
 alias work='cd $HOME/Code; ./$(fzf_styled); exit'
-alias ccache='cd $DOTFILES/hyprland; sudo ./cleansys.sh'
+alias ccache='cd $DOTFILES/hyprland; ./cleansys.sh'
+alias discord='discord --enable-speech-dispatcher --no-sandbox'
 
 PS1='\[\e[36m\](\u) \[\e[36m\]\W .sh\>\[\e[0m\] '
 

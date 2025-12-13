@@ -61,14 +61,16 @@ ntfs-3g
 nwg-dock-hyprland
 nwg-look
 obs-studio
-openresolv
+#openresolv
 paccache
+perf
 pipewire
 pipewire-alsa
 pipewire-audio
 pipewire-pulse
 pro-audio
 pwvucontrol
+rtl88x2bu-dkms-git
 scribus
 smartctl
 speech-dispatcher
@@ -88,6 +90,7 @@ webkitgtk-6.0
 wikiman
 wine
 wireplumber
+wireshark-cli
 wlogout
 wofi
 xdg-desktop-portal
