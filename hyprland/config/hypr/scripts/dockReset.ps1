@@ -1,1 +1,0 @@
-Stop-Process -Id ((Get-Process nwg-dock-hyprland).Id) -Force; nwg-dock-hyprland -p "right" -l "top" -nolauncher -i 25 -mr -10;

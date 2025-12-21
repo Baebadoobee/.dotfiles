@@ -1,4 +1,0 @@
-IN-USE  BSSID              SSID     MODE   CHAN  RATE        SIGNAL  BARS  SECURITY 
-        5E:E9:31:AE:49:4F  --       Infra  8     130 Mbit/s  94      ▂▄▆█  WPA2     
-*       5C:E9:31:8E:49:4F  Casa 11  Infra  8     130 Mbit/s  83      ▂▄▆█  WPA2     
-        90:9A:4A:02:7B:D0  Vilmaci  Infra  10    130 Mbit/s  34      ▂▄__  WPA2     

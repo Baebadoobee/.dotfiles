@@ -1,1 +1,0 @@
-Stop-Process -Id ((Get-Process waybar).Id) -Force; waybar;

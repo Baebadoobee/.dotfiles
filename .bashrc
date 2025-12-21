@@ -51,6 +51,8 @@ alias work='cd $HOME/Code; ./$(fzf_styled); exit'
 alias sysclear='cd $DOTFILES/hyprland; ./cleansys.sh'
 alias discord='discord --enable-speech-dispatcher --no-sandbox'
 
+fastfetch --config ~/fetch.jsonc
+
 PS1='\[\e[36m\](\u) \[\e[36m\]\W .sh\>\[\e[0m\] '
 
 # PS1='\u \W\\> '
