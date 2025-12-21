@@ -21,6 +21,7 @@ catppuccin-cursors-mocha
 cava
 cmatrix
 ctags
+ddgr
 desktop-file-utils
 device-mapper
 diffutils
@@ -35,6 +36,7 @@ feh
 flatery-icon-theme-git
 flatpak
 fontconfig
+gdb
 gimp
 grub-customizer
 gvfs
@@ -53,6 +55,8 @@ imagemagick
 inkscape
 kdenlive
 links
+linux-headers
+linux-lts-headers
 lua
 mesa
 ncdu
@@ -70,9 +74,10 @@ pipewire-audio
 pipewire-pulse
 pro-audio
 pwvucontrol
+reflector
 rtl88x2bu-dkms-git
 scribus
-smartctl
+smartmontools
 speech-dispatcher
 spotify
 steam
@@ -83,6 +88,7 @@ tumbler
 unzip
 upower
 usbutils
+util-linux
 v4l2loopback-dkms
 w3m
 waybar
