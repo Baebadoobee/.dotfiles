@@ -6,7 +6,9 @@ desktop-file-utils
 device-mapper
 discord
 easyeffects
+fastfetch
 feh
+firewalld
 flatpak
 fontconfig
 gimp
@@ -17,6 +19,7 @@ imagemagick
 inkscape
 kdenlive
 lua
+nvtop
 nwg-look
 obs-studio
 perf

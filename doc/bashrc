@@ -13,6 +13,7 @@ export GITHOME="https://github.com/Baebadoobee"
 export FZF_DEFAULT_OPTS="--reverse --border=bold --border=rounded --color='fg:#9595d7,bg:-1,hl:#5f87af' --color='fg+:#d7d4e3,bg+:,hl+:#5b6da5' --color='info:#d7d4e3,prompt:#d7d4e3,pointer:#ae00ff' --color='marker:#d975eb,spinner:#9595d7,header:#9595d7'"
 export DOTFILES="$HOME/.dotfiles"
 export LIBVIRT_DEFAULT_URI="qemu:///system"
+export LFS=/mnt/lfs
 
  
 fzf_styled() {
@@ -35,21 +36,26 @@ alias zathurarc='vim $HOME/.zathurarc'
 alias mrp='manim -p --flush_cache'
 alias mra='manim -a --flush_cache'
 alias tarx='tar -xvzf'
+alias unzip='7z e'
+alias gccr='gcc -std=c23 -Wall -Werror -Wextra -Wpedantic -lm'
+alias gcc='gcc -std=c23 -Wpedantic -lm'
+alias ctag-gen='ctags -R .'
 
 alias pin='sudo pacman -S --noconfirm --color=always'
 alias prm='sudo pacman -Rns --noconfirm --color=always'
-alias psu='sudo pacman -Syyu --noconfirm --color=always'
+alias psu='sudo pacman -Sy --needed archlinux-keyring && pacman -Syyu --noconfirm --color=always'
 alias psy='sudo pacman -Syy --noconfirm --color=always'
 alias pqg='pacman -Q | grep'
 
 alias yin='yay -S --noconfirm --color=always'
 alias yrm='yay -Rns --noconfirm --color=always'
-alias ysu='yay -Syyu --noconfirm --color=always'
+alias ysu='sudo pacman --needed achlinux-keyring && yay -Syyu --noconfirm --color=always'
 alias ysy='yay -Syy --noconfirm --color=always'
 
 alias work='cd $HOME/Code; ./$(fzf_styled); exit'
 alias sysclear='cd $DOTFILES/hyprland; ./cleansys.sh'
 alias discord='discord --enable-speech-dispatcher --no-sandbox'
+
 
 fastfetch --config ~/fetch.jsonc
 

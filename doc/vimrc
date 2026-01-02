@@ -19,8 +19,11 @@ set relativenumber
 set number
 set numberwidth=4
 set cursorline
-set shiftwidth=2
-set tabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set autoindent
+set smartindent
 set expandtab
 set nobackup
 "set ignorecase "If you activate this, the Modes won't work very well. You may fix it yourself :D
@@ -36,7 +39,9 @@ set wildmenu
 set wildmode=list:longest
 set mouse=a
 set termwinsize=10x200
-set completeopt=menuone,preview,noinsert,noselect
+set completeopt=menu,menuone,noselect
+set tags=./tags
+set shortmess+=c
 syntax on
 filetype on
 filetype plugin on
@@ -77,10 +82,10 @@ call plug#begin('~/.vim/plugged')
 	Plug 'tc50cal/vim-terminal'
 	Plug 'tpope/vim-fugitive'
 	Plug 'f-person/git-blame.nvim'
-  Plug 'airblade/vim-gitgutter'
-  Plug 'girishji/vimcomplete'
-  Plug 'morhetz/gruvbox'
-	Plug 'dense-analysis/ale'
+    Plug 'airblade/vim-gitgutter'
+    Plug 'morhetz/gruvbox'
+    Plug 'jiangmiao/auto-pairs'
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
@@ -101,9 +106,13 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 
 autocmd BufEnter NERD_tree_* | execute 'normal R'
 
-autocmd FileType c set omnifunc=ccomplete#Complete
-
 autocmd BufEnter *.md execute 'noremap <F5> :!exec firefox --new-window "%:p"<CR>'
+
+"let @i = "i#include <stdio.h>\<CR>#include <stdlib.h>\<CR>#include <stdint.h>\<CR>\<CR>int main(void) {\<CR>    return EXIT_SUCCESS;\<CR>}\<Esc>"
+augroup c_newfile_macro
+  autocmd!
+  autocmd BufNewFile *.c normal! @i
+augroup END
 
 "======================================================================
 " MAPPINGS
@@ -143,12 +152,10 @@ noremap <silent><leader>s :split<CR>
 noremap <silent><leader>v :vsplit<CR>
 noremap <silent><leader>q :qa!<CR>
 noremap <silent><leader>w :w<CR>
-noremap <silent><tab> :bnext!<CR>
 noremap <silent><F12> :wqa!<CR>
 
 "Tools
 noremap <silent><leader>p :PlugInstall<CR>
-noremap <silent><leader>a :ALEToggleBuffer<CR>
 noremap <silent><c-n> :NERDTreeToggle<CR>
 noremap <silent><leader>f :NERDTreeFind<CR>
 noremap <silent><leader>th :colorscheme<leader><c-d>
@@ -167,11 +174,15 @@ tnoremap <silent><leader>h exit<CR>
   nnoremap Y y$
   nnoremap <silent> <s-k> <Plug>(SmoothieUpwards)
   nnoremap <silent> <s-j> <Plug>(SmoothieDownwards)
+  nnoremap <silent><tab> :bnext!<CR>
+  nnoremap <silent><s-tab> :bprev!<CR>
 
   "Insert
   inoremap jk <esc>
   inoremap kj <esc>
-  inoremap <expr> <Tab> pumvisible() ? "\<CR>" : "\<Tab>"
+  inoremap <silent><expr> <Tab>
+      \ coc#pum#visible() ? coc#pum#confirm() :
+      \ "\<Tab>"
 
   "Visual
   vnoremap <silent> <s-k> <Plug>(SmoothieUpwards)
@@ -213,18 +224,20 @@ let g:currentmode={
   hi! link SignColumn                 EndOfBuffer
   hi! link StatusLineNC               Normal
   hi! link VertSplit                  Statement
-  hi! link CursorLine                 ErrorMsg
-  hi! link CursorLineNr               ErrorMsg
-  hi! link CursorLineSign             CursorLine
+  hi! link CursorLine                 Normal
+  hi! link CursorLineNr               Normal
+  hi! link CursorLineSign             Normal
+  "hi! link CursorLine                 ErrorMsg
+  "hi! link CursorLineNr               ErrorMsg
+  "hi! link CursorLineSign             CursorLine
   hi! link SingColumn                 CursorLineSign
-  hi! link ALESignColumnWithoutErrors LineNrAbove
-  hi! link ALEError                   LineNrAbove
-  hi! link ALEWarning                 LineNrAbove
-  hi! link ALEInfo                    LineNrAbove
-  hi! link ALEErrorSign               WarningMsg
-  hi! link ALEWarningSign             MoreMsg
-  hi! link ALEInfoSign                Title
-  hi! link ALEErrorLine               WarningMsg
+  hi! link CocFloating                Normal
+  hi! link CocErrorSign               WarningMsg
+  hi! link CocWarningSign             MoreMsg
+  hi! link CocInfoSign                Title
+  hi! link CocHintSign                WarningMsg
+
+
   hi! link GitGutterAdd               Function
   hi! link GitGutterChange            Changed
   hi! link GitGutterDelete            WarningMsg

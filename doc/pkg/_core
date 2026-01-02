@@ -17,12 +17,13 @@ dkms
 dnsmasq
 downgrade
 ffmpeg
-flatpak
 gdb
 links
 linux-headers
 linux-lts-headers
 linux-tools
+man-db
+man-pages
 ncdu
 ntfs-3g
 paccache

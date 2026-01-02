@@ -1,0 +1,6 @@
+{
+  "clangd.fallbackFlags": [
+    "-std=c23",
+    "-fexperimental-library"
+  ]
+}
